@@ -16,14 +16,14 @@ setInterval(nextSlide, 5000)
 
 
 // MOBILE NAVIGATION
-const burger = document.getElementById('burger')
+const hamburger = document.getElementById('hamburger')
 const nav = document.getElementById('main-nav')
 const navLinks = document.querySelectorAll('#main-nav li')
 
-burger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
    // Toggle nav
    nav.classList.toggle('active')
-   burger.classList.toggle('active')
+   hamburger.classList.toggle('active')
 
    // Animate links
    navLinks.forEach((link, index) => {

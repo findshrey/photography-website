@@ -1,5 +1,5 @@
-/* Tablets */
 @media (max-width: 800px) {
+
    /* NAVIGATION */
    header .nav-wrapper {
       flex-direction: row;
@@ -14,7 +14,7 @@
       margin: 0;
    }
 
-   #main-nav .main-links {
+   #main-nav ul {
       position: fixed;
       left: 0;
       top: 0;
@@ -25,7 +25,7 @@
       align-items: center;
       text-align: center;
       padding: 15vh 0;
-      background-color: rgb(12, 12, 12);
+      background-color: #000;
       opacity: 0;
       pointer-events: none;
       /* transition: opacity 0.3s ease-in; */
@@ -34,34 +34,32 @@
    /* Links initially hidden */
    #main-nav li {
       opacity: 0;
-      letter-spacing: 2px;
+      letter-spacing: 0.2rem;
    }
 
-   #main-nav.active .main-links {
+   #main-nav.active ul {
       opacity: 1;
       pointer-events: auto;
    }
 
-   /* Burger Menu */
-   .nav-wrapper #burger {
+   /* Hamburger Icon */
+   .nav-wrapper #hamburger {
       font-size: calc(2rem + 1vw);
       display: block;
-      z-index: 10;
       color: var(--white);
       cursor: pointer;
       transition: transform 0.5s ease;
    }
 
-   #burger.active {
+   #hamburger.active {
       position: fixed;
       top: 5rem;
       right: 2rem;
-      transform: rotate(1turn);
+      transform: rotate(2turn);
    }
 
    @keyframes navLinksFadeIn {
       from {
-         opacity: 0;
          transform: translateY(-50px);
       }
 
