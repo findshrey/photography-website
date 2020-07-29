@@ -1,0 +1,212 @@
+/* Tablets */
+@media (max-width: 800px) {
+   /* NAVIGATION */
+   header .nav-wrapper {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+   }
+
+   .nav-wrapper .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+   }
+
+   #main-nav .main-links {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      padding: 15vh 0;
+      background-color: rgb(12, 12, 12);
+      opacity: 0;
+      pointer-events: none;
+      /* transition: opacity 0.3s ease-in; */
+   }
+
+   /* Links initially hidden */
+   #main-nav li {
+      opacity: 0;
+      letter-spacing: 2px;
+   }
+
+   #main-nav.active .main-links {
+      opacity: 1;
+      pointer-events: auto;
+   }
+
+   /* Burger Menu */
+   .nav-wrapper #burger {
+      font-size: calc(2rem + 1vw);
+      display: block;
+      z-index: 10;
+      color: var(--white);
+      cursor: pointer;
+      transition: transform 0.5s ease;
+   }
+
+   #burger.active {
+      position: fixed;
+      top: 5rem;
+      right: 2rem;
+      transform: rotate(1turn);
+   }
+
+   @keyframes navLinksFadeIn {
+      from {
+         opacity: 0;
+         transform: translateY(-50px);
+      }
+
+      to {
+         opacity: 1;
+         transform: translateY(0px);
+      }
+   }
+   
+   /* QUOTE */
+   #quote {
+      min-height: 45rem;
+   }
+
+   /* PORTFOLIO HIGHLIGHT */
+   #portfolio-highlight {
+      padding: 8rem 0;
+   }
+
+   #portfolio-highlight .gallery-container {
+      /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+      grid-template-columns: 1fr;
+      /* grid-template-rows: auto auto auto; */
+   }
+   
+   /* Can also use span 1 for both */
+   .gallery-container > * {
+      grid-column: span 1;
+      grid-row: span 1;
+   }
+
+   .gallery2, .gallery4, .gallery5 {
+      display: none;
+   }
+
+   .gallery6 {
+      background: var(--bg-primary);
+      /* align-items: stretch; */
+   }
+
+   /* FEATURED REVIEWS */
+   #featured-reviews {
+      height: 45rem;
+      /* padding: 6rem 0; */
+   }
+
+   /* INTRODUCTION */
+   #introduction {
+      padding: 8rem 0;
+   }
+
+   #introduction .intro-wrapper {
+      flex-direction: column;
+   }
+
+   .intro-wrapper .text-area {
+      padding: 0 0 5rem 0;
+   }
+
+   .text-area h2 br,
+   .text-area h4 br {
+      display: none;
+   }
+
+   .text-area h4 {
+      word-spacing: 0.2rem;
+   }
+
+   /* FOOTER */
+   footer .footer-upper {
+      flex-direction: column;
+   }
+
+   /* Left side */
+   .footer-upper .footer-instagram {
+      text-align: center;
+   }
+
+   .footer-instagram .insta-img-container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   /* Right side */
+   .footer-inquire {
+      padding: 3rem 0 0 0;
+      align-items: center;
+      text-align: center;
+   }
+
+   footer .footer-lower {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+   }
+
+   .footer-lower .footer-nav {
+      margin-bottom: 3rem;
+   }
+
+   .footer-nav a {
+      margin-left: 2rem;
+   }
+}
+
+/* Smartphones (Portrait) */
+@media (max-width: 500px) {
+   html {
+      /* Header Sizes */
+      --header1: 2.5rem;
+      --header2: 2.5rem; /* 3rem? */
+      --header3: 2rem;
+      --header4: 1rem; /* 0.9? */
+      /* Text Sizes */
+      --text: 1.2rem;
+      --small-text: 1rem; /* 0.9? */
+   }
+
+
+   h1, h3, h4 {
+      letter-spacing: 0.1rem;
+   }
+
+   h2 {
+      letter-spacing: 0.2rem;
+   }
+
+   /* QUOTE */
+   #quote {
+      min-height: 40rem;
+   }
+
+   /* PORTFOLIO HIGHLIGHT */
+   #portfolio-highlight {
+      padding: 6rem 0;
+   }
+
+   /* FEATURED REVIEWS */
+   #featured-reviews {
+      /* height: 40rem; */
+      padding: 3rem 0;
+   }
+
+   /* INTRODUCTION */
+   #introduction {
+      padding: 6rem 0;
+   }
+}
