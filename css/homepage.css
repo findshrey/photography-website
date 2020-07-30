@@ -11,42 +11,13 @@ header .nav-wrapper {
    left: 0;
    width: 100%;
    z-index: 10;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 5rem 2rem;
-   text-transform: uppercase;
+   background: transparent;
 }
 
-.nav-wrapper .logo {
-   margin-bottom: 4rem;
-   text-align: center;
-   pointer-events: none;
-}
-
-.logo h1 {
-   color: var(--white);
-}
-
-.logo h4 {
-   color: var(--white);
-   font-family: 'Josefin Sans Light';
-}
-
-.nav-wrapper #nav-main {
-   width: 100%;
-}
-
-#nav-main ul {
-   display: flex;
-   justify-content: space-around;
-}
-
+.logo h1,
+.logo h4,
 #nav-main li a {
    color: var(--white);
-   font-size: var(--small-text);
-   letter-spacing: 0.2rem;
-   font-family: 'Overpass Light';
 }
 
 #nav-main li a:hover {
@@ -54,7 +25,7 @@ header .nav-wrapper {
 }
 
 .nav-wrapper #hamburger {
-   display: none;
+   color: var(--white);
 }
 
 /* Auto Slideshow */
@@ -179,7 +150,7 @@ header .nav-wrapper {
 }
 
 .gallery6 a {
-   font-style: italic;
+   /* font-style: italic; */
    margin-top: clamp(1rem, 1rem + 0.5vw, 2.5rem);
 }
 
@@ -319,76 +290,6 @@ header .nav-wrapper {
 
 
 @media (max-width: 800px) {
-
-   /* NAVIGATION */
-   header .nav-wrapper {
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-   }
-
-   .nav-wrapper .logo {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0;
-   }
-
-   #nav-main ul {
-      position: fixed;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-      padding: 15vh 0;
-      background-color: #000;
-      opacity: 0;
-      pointer-events: none;
-      /* transition: opacity 0.3s ease-in; */
-   }
-
-   /* Links initially hidden */
-   #nav-main li {
-      opacity: 0;
-      letter-spacing: 0.2rem;
-   }
-
-   #nav-main.active ul {
-      opacity: 1;
-      pointer-events: auto;
-   }
-
-   /* Hamburger icon */
-   .nav-wrapper #hamburger {
-      font-size: calc(2rem + 1vw);
-      display: block;
-      color: var(--white);
-      cursor: pointer;
-      transition: transform 0.5s ease;
-   }
-
-   #hamburger.active {
-      position: fixed;
-      top: 5rem;
-      right: 2rem;
-      transform: rotate(2turn);
-   }
-
-   @keyframes navLinksFadeIn {
-      from {
-         transform: translateY(-50px);
-      }
-
-      to {
-         opacity: 1;
-         transform: translateY(0px);
-      }
-   }
-   
    /* INTRODUCTION */
    #introduction {
       min-height: 45rem;
