@@ -17,8 +17,8 @@ setInterval(nextSlide, 5000)
 
 // MOBILE NAVIGATION
 const hamburger = document.getElementById('hamburger')
-const nav = document.getElementById('main-nav')
-const navLinks = document.querySelectorAll('#main-nav li')
+const nav = document.getElementById('nav-main')
+const navLinks = document.querySelectorAll('#nav-main li')
 
 hamburger.addEventListener('click', () => {
    // Toggle nav

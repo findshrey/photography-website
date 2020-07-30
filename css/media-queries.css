@@ -14,7 +14,7 @@
       margin: 0;
    }
 
-   #main-nav ul {
+   #nav-main ul {
       position: fixed;
       left: 0;
       top: 0;
@@ -32,12 +32,12 @@
    }
 
    /* Links initially hidden */
-   #main-nav li {
+   #nav-main li {
       opacity: 0;
       letter-spacing: 0.2rem;
    }
 
-   #main-nav.active ul {
+   #nav-main.active ul {
       opacity: 1;
       pointer-events: auto;
    }
@@ -69,24 +69,24 @@
       }
    }
    
-   /* QUOTE */
-   #quote {
+   /* INTRODUCTION */
+   #introduction {
       min-height: 45rem;
    }
 
-   /* PORTFOLIO HIGHLIGHT */
-   #portfolio-highlight {
+   /* FEATURED GALLERY */
+   #featured-gallery {
       padding: 8rem 0;
    }
 
-   #portfolio-highlight .gallery-container {
+   #featured-gallery .gallery-inner-container {
       /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
       grid-template-columns: 1fr;
       /* grid-template-rows: auto auto auto; */
    }
    
    /* Can also use span 1 for both */
-   .gallery-container > * {
+   .gallery-inner-container > * {
       grid-column: span 1;
       grid-row: span 1;
    }
@@ -103,19 +103,18 @@
    /* FEATURED REVIEWS */
    #featured-reviews {
       height: 45rem;
-      /* padding: 6rem 0; */
    }
 
-   /* INTRODUCTION */
-   #introduction {
+   /* ABOUT */
+   #about {
       padding: 8rem 0;
    }
 
-   #introduction .intro-wrapper {
+   #about .about-wrapper {
       flex-direction: column;
    }
 
-   .intro-wrapper .text-area {
+   .about-wrapper .text-area {
       padding: 0 0 5rem 0;
    }
 
@@ -134,16 +133,16 @@
    }
 
    /* Left side */
-   .footer-upper .footer-instagram {
+   .footer-upper .instagram-footer {
       text-align: center;
    }
 
-   .footer-instagram .insta-img-container {
+   .instagram-footer .insta-img-container {
       grid-template-columns: repeat(2, 1fr);
    }
 
    /* Right side */
-   .footer-inquire {
+   .inquire-footer {
       padding: 3rem 0 0 0;
       align-items: center;
       text-align: center;
@@ -156,11 +155,11 @@
       text-align: center;
    }
 
-   .footer-lower .footer-nav {
+   .footer-lower .nav-footer {
       margin-bottom: 3rem;
    }
 
-   .footer-nav a {
+   .nav-footer a {
       margin-left: 2rem;
    }
 }
@@ -187,24 +186,23 @@
       letter-spacing: 0.2rem;
    }
 
-   /* QUOTE */
-   #quote {
+   /* INTRODUCTION */
+   #introduction {
       min-height: 40rem;
    }
 
-   /* PORTFOLIO HIGHLIGHT */
-   #portfolio-highlight {
+   /* FEATURED GALLERY */
+   #featured-gallery {
       padding: 6rem 0;
    }
 
    /* FEATURED REVIEWS */
    #featured-reviews {
-      /* height: 40rem; */
       padding: 3rem 0;
    }
 
-   /* INTRODUCTION */
-   #introduction {
+   /* ABOUT */
+   #about {
       padding: 6rem 0;
    }
 }
