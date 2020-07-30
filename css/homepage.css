@@ -1,101 +1,4 @@
-/* BASE SETTINGS */
-*, 
-*::before, 
-*::after {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-}
-
-/* Logo Font */
-@font-face {
-   font-family: 'Josefin Sans Thin';
-   src: url(./../fonts/JosefinSans-Thin.ttf);
-}
-@font-face {
-   font-family: 'Josefin Sans Light';
-   src: url(./../fonts/JosefinSans-Light.ttf);
-}
-
-/* Heading Font */
-@font-face {
-   font-family: 'Tenderness';
-   src: url(./../fonts/Tenderness.otf);
-}
-
-/* General Font */
-@font-face {
-   font-family: 'Overpass Light';
-   src: url(./../fonts/Overpass-Light.ttf);
-}
-@font-face {
-   font-family: 'Overpass Regular';
-   src: url(./../fonts/Overpass-Regular.ttf);
-}
-
-html {
-   font-size: 62.5%;
-   scroll-behavior: smooth;
-   /* Header Sizes */
-   --header1: calc(2rem + 1.25vw);
-   --header2: calc(2.5rem + 1.25vw);
-   --header3: calc(1.3rem + 1.25vw);
-   --header4: calc(0.8rem + 0.5vw);
-   /* Text Sizes */
-   --text: calc(1rem + 0.5vw);
-   --small-text: calc(0.8rem + 0.5vw);
-   /* Colors */
-   --white: #fff;
-   --matte-black: #333;
-   --bg-primary: #f4f2f1;
-   --special-color: #ff971d;
-}
-
-body {
-   background: var(--white);
-   color: var(--matte-black);
-   font-family: 'Overpass Regular', sans-serif;
-   line-height: 1.5;
-}
-
-h1 {
-   font-family: 'Josefin Sans Thin', sans-serif;
-   font-size: var(--header1);
-   letter-spacing: calc(0.1rem + 0.25vw);
-}
-
-h2 {
-   font-family: 'Tenderness', sans-serif;
-   font-size: var(--header2);
-   letter-spacing: calc(0.1rem + 0.25vw);
-}
-
-h3 {
-   font-family: 'Tenderness', sans-serif;
-   font-size: var(--header3);
-   letter-spacing: calc(0.1rem + 0.10vw);
-}
-
-h4 {
-   font-family: 'Tenderness', sans-serif;
-   font-size: var(--header4);
-   letter-spacing: calc(0.1rem + 0.10vw);
-}
-
-ul {
-   list-style: none;
-}
-
-a {
-   color: var(--matte-black);
-   text-decoration: none;
-}
-
-p, span, li, a, label, input, button {
-   font-size: var(--text);
-}
-
-/* NAVIGATION */
+/* SHOWCASE */
 #home header {
    min-height: 100vh;
    overflow: hidden;
@@ -414,83 +317,158 @@ header .nav-wrapper {
    object-fit: cover;
 }
 
-/* FOOTER */
-footer {
-   /* padding: 0 5rem; */
-   /* border: 2px solid red; */
+
+@media (max-width: 800px) {
+
+   /* NAVIGATION */
+   header .nav-wrapper {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+   }
+
+   .nav-wrapper .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+   }
+
+   #nav-main ul {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      padding: 15vh 0;
+      background-color: #000;
+      opacity: 0;
+      pointer-events: none;
+      /* transition: opacity 0.3s ease-in; */
+   }
+
+   /* Links initially hidden */
+   #nav-main li {
+      opacity: 0;
+      letter-spacing: 0.2rem;
+   }
+
+   #nav-main.active ul {
+      opacity: 1;
+      pointer-events: auto;
+   }
+
+   /* Hamburger icon */
+   .nav-wrapper #hamburger {
+      font-size: calc(2rem + 1vw);
+      display: block;
+      color: var(--white);
+      cursor: pointer;
+      transition: transform 0.5s ease;
+   }
+
+   #hamburger.active {
+      position: fixed;
+      top: 5rem;
+      right: 2rem;
+      transform: rotate(2turn);
+   }
+
+   @keyframes navLinksFadeIn {
+      from {
+         transform: translateY(-50px);
+      }
+
+      to {
+         opacity: 1;
+         transform: translateY(0px);
+      }
+   }
+   
+   /* INTRODUCTION */
+   #introduction {
+      min-height: 45rem;
+   }
+
+   /* FEATURED GALLERY */
+   #featured-gallery {
+      padding: 8rem 0;
+   }
+
+   #featured-gallery .gallery-inner-container {
+      /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+      grid-template-columns: 1fr;
+      /* grid-template-rows: auto auto auto; */
+   }
+   
+   /* Can also use span 1 for both */
+   .gallery-inner-container > * {
+      grid-column: span 1;
+      grid-row: span 1;
+   }
+
+   .gallery2, .gallery4, .gallery5 {
+      display: none;
+   }
+
+   .gallery6 {
+      background: var(--bg-primary);
+      /* align-items: stretch; */
+   }
+
+   /* FEATURED REVIEWS */
+   #featured-reviews {
+      height: 45rem;
+   }
+
+   /* ABOUT */
+   #about {
+      padding: 8rem 0;
+   }
+
+   #about .about-wrapper {
+      flex-direction: column;
+   }
+
+   .about-wrapper .text-area {
+      padding: 0 0 5rem 0;
+   }
+
+   .text-area h2 br,
+   .text-area h4 br {
+      display: none;
+   }
+
+   .text-area h4 {
+      word-spacing: 0.2rem;
+   }
 }
 
-footer .footer-upper {
-   display: flex;
-   padding: 5rem 5vw;   /* 90% of the container width */
-   background: var(--bg-primary);
-}
 
-/* Left side */
-.footer-upper .instagram-footer {
-   flex: 1;
-}
+@media (max-width: 500px) {
+   /* INTRODUCTION */
+   #introduction {
+      min-height: 40rem;
+   }
 
-.instagram-footer span {
-   display: block;
-   margin-bottom: 3rem;
-   font-size: var(--small-text);
-}
+   /* FEATURED GALLERY */
+   #featured-gallery {
+      padding: 6rem 0;
+   }
 
-.instagram-footer .insta-img-container {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
-   gap: calc(0.5rem + 0.5vw);
-}
+   /* FEATURED REVIEWS */
+   #featured-reviews {
+      padding: 3rem 0;
+   }
 
-.insta-img-container img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   display: block;
-}
-
-/* Right side */
-.inquire-footer {
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-   padding-left: 5rem;
-   /* border-bottom: 1px solid var(--matte-black); */
-}
-
-.inquire-footer p {
-   margin: clamp(2rem, 1.8rem + 1vw, 4rem) 0;
-   line-height: 1.8;
-   font-size: var(--small-text);
-}
-
-.inquire-footer a {
-   font-size: var(--small-text);
-   /* font-style: italic; */
-}
-
-footer .footer-lower {
-   padding: 5rem 5vw;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-.nav-footer ul {
-   display: flex;
-}
-
-.nav-footer a {
-   margin-left: 2.5rem;
-   font-size: var(--small-text);
-}
-
-.nav-footer ul li:first-child a {
-   margin-left: 0;
+   /* ABOUT */
+   #about {
+      padding: 6rem 0;
+   }
 }
 
 @media (min-width: 1800px) {
