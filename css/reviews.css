@@ -1,0 +1,26 @@
+#client-reviews {
+   padding: 10rem 0;
+}
+
+#client-reviews .reviews-wrapper {
+   width: 90%;
+   margin: 0 auto;
+   padding: 0 15rem;
+}
+
+.reviews-wrapper h3 {
+   text-transform: uppercase;
+}
+
+.reviews-wrapper > h4 {
+   text-transform: uppercase;
+   margin-bottom: 5rem;
+}
+
+.reviews-wrapper .rev {
+   margin-bottom: 5rem;
+}
+
+.rev h4 {
+   margin-bottom: 1.5rem;
+}
