@@ -16,3 +16,38 @@
    font-family: 'Josefin Sans Light';
    /* margin: 0 0 10rem 10rem; */
 }
+
+
+#contact-form {
+   padding: 10rem 0;
+}
+
+#contact-form .form-wrapper {
+   width: 90%;
+   max-width: 1100px;
+   margin: 0 auto;
+   /* border: 2px solid red; */
+
+}
+
+form {
+   /* width: 100%; */
+   border: 2px solid blue;
+}
+
+form .form-input {
+   text-align: center;
+   display: inline-block;
+   width: 45%;
+   padding: 0 1rem;
+}
+
+.form-input label {
+   font-size: var(--small-text);
+   text-transform: uppercase;
+
+}
+
+.form-input input {
+   width: 100%;
+}
