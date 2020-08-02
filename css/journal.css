@@ -1,0 +1,40 @@
+#journal {
+   padding: 10rem 0;
+}
+
+#journal .journal-wrapper {
+   width: 90%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.journal-wrapper .journal-container {
+   margin-top: 5rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 7rem;
+}
+
+.page .page-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   border-bottom: 1px solid var(--matte-black);
+   margin-bottom: 2rem;
+}
+
+.page a {
+   display: block;
+   width: 100%;
+   overflow: hidden;
+}
+
+.page a img {
+   width: 100%;
+   display: block;
+   transition: all 0.5s ease;
+}
+
+.page a:hover img {
+   transform: scale(1.2);
+}
