@@ -46,17 +46,67 @@
       <section id="contact-form">
          <div class="form-wrapper">
             <form action="">
-               <div class="form-input">
+               <div class="form-control">
+                  <input type="text" placeholder="Your Name">
+                  <input type="text" placeholder="Your Partner's Name">
+               </div>
+               <div class="form-control">
+                  <input type="email" placeholder="Your Email">
+                  <input type="number" placeholder="Mobile No.">
+               </div>
+               <div class="form-control">
+                  <input type="date" placeholder="Date">
+                  <input type="text" placeholder="Location">
+               </div>
+               <div class="form-control">
                   <label>
-                     Your Name <br>
-                     <input type="text">
+                     We want you for... <br>
+                     <select name="" id="">
+                        <option value="">Wedding</option>
+                        <option value="">Elopement</option>
+                        <option value="">Other</option>
+                     </select>
+                  </label>
+                  <label>
+                     How did you hear about me? <br>
+                     <select name="" id="">
+                        <option value="">Client Referral</option>
+                        <option value="">Google</option>
+                        <option value="">Facebook</option>
+                        <option value="">Instagram</option>
+                        <option value="">Wedding Blog</option>
+                        <option value="">Pinterest</option>
+                        <option value="">Other</option>
+                     </select>
                   </label>
                </div>
-               <div class="form-input">
-                  <label>
-                     Your Email <br>
-                     <input type="text">
-                  </label>
+               <div class="checkboxes">
+                  Are you interested in wedding weeked coverage ?
+                  <div class="checkbox-options">
+                     <label>
+                        Absolutely!
+                        <input type="radio" name="a">
+                     </label>
+                     <label>
+                        Still deciding
+                        <input type="radio" name="a">
+                     </label>
+                     <label>
+                        Nah we good!
+                        <input type="radio" name="a">
+                     </label>
+                  </div>
+               </div>
+               <div class="form-control-textarea">
+                  Tell me about you two! Give me details. <br>
+                  <textarea name="" rows="5" placeholder="Hobbies? Favourive shows? Food? How you met?"></textarea>
+               </div>
+               <div class="form-control-textarea">
+                  Any questions for me ? <br>
+                  <textarea name="" rows="5" placeholder="Fire away!"></textarea>
+               </div>
+               <div class="submit-button">
+                  <button type="submit">Submit</button>
                </div>
             </form>
          </div>
