@@ -28,6 +28,10 @@
    /* text-align: center; */
 }
 
+.form-wrapper header {
+   text-align: center;
+}
+
 form .form-control {
    display: flex;
    justify-content: space-between;
@@ -49,7 +53,7 @@ input::placeholder {
 }
 
 input:focus {
-   border: none;
+   outline: none;
 }
 
 .form-control label {
@@ -68,8 +72,4 @@ form .form-control-textarea textarea {
    width: 100%;
    resize: none;
    margin-bottom: 5rem;
-}
-
-form .submit-button {
-   text-align: center;
 }
