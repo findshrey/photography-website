@@ -1,26 +1,55 @@
 #client-reviews {
-   padding: 10rem 0;
+   padding: calc(4.5rem + 1.5vw) 0;
+}
+
+#client-reviews header {
+   text-align: center;
+   margin-bottom: calc(4rem + 1vw);
+}
+
+#client-reviews header h2 {
+   text-transform: uppercase;
+   color: var(--special-color);
+}
+
+#client-reviews header h4 {
+   font-family: 'Overpass Light', sans-serif;
 }
 
 #client-reviews .reviews-wrapper {
-   width: 90%;
+   width: 70%;
    margin: 0 auto;
-   padding: 0 15rem;
+   max-width: 1440px;
 }
 
-.reviews-wrapper h3 {
+.reviews-wrapper .review {
+   margin-bottom: calc(3rem + 1.5vw);
+}
+
+.reviews-wrapper .review:last-child {
+   margin-bottom: 0;
+}
+
+.review h4 {
    text-transform: uppercase;
+   margin-bottom: calc(1rem + 0.25vw);
+   font-size: var(--text);
 }
 
-.reviews-wrapper > h4 {
-   text-transform: uppercase;
-   margin-bottom: 5rem;
+.review p {
+   line-height: 2;
+   font-style: italic;
 }
 
-.reviews-wrapper .rev {
-   margin-bottom: 5rem;
+@media (max-width: 800px) {
+   #client-reviews .reviews-wrapper {
+      width: 80%;
+   }
 }
 
-.rev h4 {
-   margin-bottom: 1.5rem;
+@media (max-width: 500px) {
+   #client-reviews .reviews-wrapper {
+      width: 90%;
+      padding: 0 1rem;
+   }
 }
