@@ -1,18 +1,28 @@
 #journal {
-   padding: 10rem 0;
+   padding: calc(4rem + 1.5vw) 0;
 }
 
 #journal .journal-wrapper {
    width: 90%;
    margin: 0 auto;
-   text-align: center;
 }
 
-.journal-wrapper .journal-container {
-   margin-top: 5rem;
+.journal-wrapper header {
+   text-align: center;
+   margin-bottom: calc(5rem + 1vw);
+   text-transform: uppercase;
+}
+
+.journal-wrapper header h2 {
+   color: var(--special-color);
+   letter-spacing: calc(0.4rem + 0.30vw );
+}
+
+.journal-wrapper .pages-container {
+   /* margin-top: 5rem; */
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 7rem;
+   gap: calc(5rem + 1vw);
 }
 
 .page .page-title {
@@ -23,18 +33,23 @@
    margin-bottom: 2rem;
 }
 
+/* For hover effect */
 .page a {
    display: block;
    width: 100%;
    overflow: hidden;
 }
-
 .page a img {
    width: 100%;
    display: block;
    transition: all 0.5s ease;
 }
-
 .page a:hover img {
    transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+   .journal-wrapper .pages-container {
+      grid-template-columns: 1fr;
+   }
 }

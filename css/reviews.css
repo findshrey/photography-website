@@ -10,6 +10,7 @@
 #client-reviews header h2 {
    text-transform: uppercase;
    color: var(--special-color);
+   letter-spacing: calc(0.4rem + 0.30vw );
 }
 
 #client-reviews header h4 {

@@ -1,6 +1,5 @@
 /* ABOUT LEAD */
 #about-lead {
-   /* padding: calc(5rem + 3vw) 0; */
    padding: calc(4rem + 1.5vw) 0;
 }
 
@@ -31,9 +30,10 @@
    text-transform: uppercase;
 }
 
-.about-lead-title h3 {
-   letter-spacing: 0.8rem;
+.about-lead-title h2 {
    margin-bottom: 1rem;
+   color: var(--special-color);
+   letter-spacing: calc(0.4rem + 0.30vw );
 }
 
 .about-lead-title h4 {
@@ -99,7 +99,7 @@
    }
 
    .about-lead-title {
-      margin-top: 3rem;
+      margin-top: 4rem;
       text-align: center;
       padding: 0;
    }
