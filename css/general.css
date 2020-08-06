@@ -211,6 +211,23 @@ footer .footer-lower {
    margin-left: 0;
 }
 
+/* Section Fade-In Animation */
+.section-fade-in {
+   opacity: 0;
+}
+
+@keyframes sectionFadeIn {
+   from {
+      transform: translateY(200px);
+      opacity: 0;
+   }
+
+   to {
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
 @media (max-width: 800px) {
    /* NAVIGATION */
    header .nav-wrapper {
