@@ -54,68 +54,71 @@
       <!-- CONTACT FORM -->
       <section id="contact-form" class="section-fade-in">
          <div class="form-wrapper">
-            <form action="">
+            <form action="https://formspree.io/xknqyldz" method="POST">
                <div class="form-control-input">
-                  <input type="text" placeholder="Your Name">
-                  <input type="text" placeholder="Your Partner's Name">
+                  <input type="text" name="user-name" placeholder="Your Name*" required>
+                  <input type="text" name="partner-name" placeholder="Your Partner's Name">
                </div>
                <div class="form-control-input">
-                  <input type="email" placeholder="Your Email">
-                  <input type="number" placeholder="Mobile No.">
+                  <input type="email" name="email" placeholder="Your Email*" required>
+                  <input type="number" name="phone" placeholder="Phone*" required>
                </div>
                <div class="form-control-input">
-                  <input type="text" placeholder="Date">
-                  <input type="text" placeholder="Location">
+                  <input type="text" name="date" placeholder="Date*" required>
+                  <input type="text" name="location" placeholder="Location*" required>
                </div>
                <div class="form-control-select">
                   <label>
                      <div>We want you for...</div>
-                     <select name="" id="">
-                        <option value="">Wedding</option>
-                        <option value="">Elopement</option>
-                        <option value="">Other</option>
+                     <select name="requirement">
+                        <option hidden disabled selected value> -- Select an option -- </option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Elopement">Elopement</option>
+                        <option value="Other">Other</option>
                      </select>
                   </label>
                   <label>
                      <div>How did you hear about me ?</div>
-                     <select name="" id="">
-                        <option value="">Client Referral</option>
-                        <option value="">Google</option>
-                        <option value="">Facebook</option>
-                        <option value="">Instagram</option>
-                        <option value="">Wedding Blog</option>
-                        <option value="">Pinterest</option>
-                        <option value="">Other</option>
+                     <select name="where-you-find-me">
+                        <option hidden disabled selected value> -- Select an option -- </option>
+                        <option value="Client Referral">Client Referral</option>
+                        <option value="Google">Google</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Wedding Blog">Wedding Blog</option>
+                        <option value="Pinterest">Pinterest</option>
+                        <option value="Other">Other</option>
                      </select>
                   </label>
                </div>
                <div class="form-control-radio">
-                  <div class="question">Are you interested in wedding weeked coverage ?</div>
-                  <div class="options">
+                  <div class="coverage-question">Are you interested in wedding weekend coverage ?</div>
+                  <div class="coverage-options">
                      <label>
-                        <input type="radio" name="coverage">
+                        <input type="radio" name="weekend-coverage" value="Yes">
                         <span>Absolutely!</span>
                      </label>
                      <label>
-                        <input type="radio" name="coverage">
+                        <input type="radio" name="weekend-coverage" value="Not Sure">
                         <span>Still deciding</span>
                      </label>
                      <label>
-                        <input type="radio" name="coverage">
+                        <input type="radio" name="weekend-coverage" value="No">
                         <span>Nah we good!</span>
                      </label>
                   </div>
                </div>
                <div class="form-control-textarea">
                   <div>Tell me about you two! Give me details.</div>
-                  <textarea name="" rows="5" placeholder="Hobbies? Favourive shows? Food? How you met?"></textarea>
+                  <textarea name="about-user" rows="5"
+                     placeholder="Hobbies? Favourive shows? Food? How you met?"></textarea>
                </div>
                <div class="form-control-textarea">
                   <div>Any questions for me ?</div>
-                  <textarea name="" rows="5" placeholder="Fire away!"></textarea>
+                  <textarea name="user-questions" rows="5" placeholder="Fire away!"></textarea>
                </div>
-               <div class="submit-button">
-                  <button type="submit">Submit</button>
+               <div class="form-submit">
+                  <button type="submit" class="btn">Submit</button>
                </div>
             </form>
          </div>

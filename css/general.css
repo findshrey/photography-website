@@ -256,7 +256,8 @@ footer .footer-lower {
       padding: 15vh 0;   /* 70% of the height */
       background-color: #000;
       opacity: 0;
-      pointer-events: none;
+      z-index: -10;
+      /* pointer-events: none; */
       /* transition: opacity 0.3s ease-in; */
    }
 
@@ -268,11 +269,16 @@ footer .footer-lower {
 
    #nav-main.active ul {
       opacity: 1;
-      pointer-events: auto;
+      z-index: 10;
+      /* pointer-events: auto; */
    }
 
    #nav-main.active ul li a {
       color: var(--white);
+   }
+
+   #nav-main.active ul li a:hover {
+      border-bottom: 1px solid var(--white);
    }
 
    .nav-wrapper #hamburger {
@@ -289,6 +295,7 @@ footer .footer-lower {
       top: 4rem;
       right: 2rem;
       transform: rotate(2turn);
+      z-index: 10;
    }
 
    @keyframes navLinksFadeIn {
@@ -349,4 +356,20 @@ footer .footer-lower {
    h2 {
       letter-spacing: 0.2rem;
    }
+}
+
+/* UTILITY CLASSES */
+
+.btn {
+   border: none;
+   border-bottom: 1px solid var(--matte-black);
+   font-style: italic;
+   cursor: pointer;
+   background: transparent;
+   color: var(--matte-black);
+   font-family: 'Overpass Regular', sans-serif;
+}
+
+.btn:focus {
+   outline: none;
 }

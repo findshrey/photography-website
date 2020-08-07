@@ -64,18 +64,27 @@ form .form-control-input {
    border: none;
    border-bottom: 1px solid var(--matte-black);
    padding: 1rem 0;
-   /* font-family: 'Tenderness', sans-serif; */
+   font-family: 'Overpass Light', sans-serif;
 }
 
 input::placeholder {
    font-family: 'Tenderness', sans-serif;
-   /* font-size: var(--small-text); */
-   /* text-transform: uppercase; */
    letter-spacing: 0.2rem;
    color: var(--matte-black);
 }
 input:focus {
    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+   -moz-appearance: textfield;
 }
 
 /* Select field */
@@ -87,7 +96,6 @@ form .form-control-select {
 
 .form-control-select div {
    font-family: 'Tenderness', sans-serif;
-   /* text-transform: uppercase; */
    letter-spacing: 0.3rem;
    margin-bottom: 1rem;
 }
@@ -117,24 +125,23 @@ form .form-control-radio {
    margin-bottom: calc(3.5rem + 1vw);
 }
 
-.form-control-radio .question {
+.form-control-radio .coverage-question {
    font-family: 'Tenderness', sans-serif;
    font-size: var(--text);
-   /* text-transform: uppercase; */
    margin-bottom: 1.5rem;
    letter-spacing: 0.2rem;
 }
 
-.form-control-radio .options span {
+.form-control-radio .coverage-options span {
    font-family: 'Tenderness', sans-serif;
    letter-spacing: 0.1rem;
 }
 
-.options label {
+.coverage-options label {
    cursor: pointer;
 }
 
-.options label:nth-child(2) {
+.coverage-options label:nth-child(2) {
    margin: 0 2rem;
 }
 
@@ -157,7 +164,6 @@ input[type="radio"]:checked {
 .form-control-textarea div {
    font-family: 'Tenderness', sans-serif;
    font-size: var(--text);
-   /* text-transform: uppercase; */
    margin-bottom: 1rem;
    letter-spacing: 0.2rem;
 }
@@ -167,6 +173,7 @@ input[type="radio"]:checked {
    resize: none;
    padding: 1rem;
    background: var(--bg-primary);
+   font-family: 'Overpass Light', sans-serif;
 }
 
 textarea::placeholder {
@@ -180,23 +187,9 @@ textarea:focus {
    outline: none;
 }
 
-form .submit-button {
+form .form-submit {
    display: flex;
    justify-content: center;
-}
-
-.submit-button button {
-   border: none;
-   font-style: italic;
-   cursor: pointer;
-   background: transparent;
-   color: var(--matte-black);
-   font-family: 'Overpass Regular', sans-serif;
-   border-bottom: 1px solid var(--matte-black);
-}
-
-.submit-button button:focus {
-   outline: none;
 }
 
 @media (max-width: 800px) {
@@ -241,13 +234,13 @@ form .submit-button {
    }
 
    /* Radio field */
-   .form-control-radio .options {
+   .form-control-radio .coverage-options {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
    }
 
-   .options label:nth-child(2) {
+   .coverage-options label:nth-child(2) {
       margin: 1.5rem 0;
    }
 }

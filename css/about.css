@@ -1,6 +1,6 @@
 /* ABOUT LEAD */
 #about-lead {
-   padding: calc(4rem + 1.5vw) 0;
+   padding: calc(5rem + 2vw) 0;
 }
 
 #about-lead .about-lead-wrapper {
@@ -42,10 +42,6 @@
 }
 
 /* ABOUT */
-#about {
-   padding: calc(4rem + 1.5vw) 0;
-}
-
 #about .about-wrapper {
    width: 90%;
    /* max-width: 1440px; */
@@ -68,7 +64,7 @@
 
 /* ACHIEVEMENTS */
 #achievements {
-   padding: calc(4.5rem + 1.5vw) 0;
+   padding: calc(5rem + 2vw) 0;
 }
 
 #achievements .achievements-wrapper {
