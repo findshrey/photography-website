@@ -35,6 +35,7 @@ header .slide {
    left: 0;
    height: 100%;
    width: 100%;
+   object-fit: cover;
    opacity: 0;
    transition: opacity 0.5s ease-in-out;
 }
@@ -43,8 +44,19 @@ header .slide {
    opacity: 1;
 }
 
+/* Overlay for showcase */
+header::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.2);
+}
+
 /* Auto Slideshow Images */
-.slide:first-child {
+/* .slide:first-child {
    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
       url(./../img/slides/1.jpg) no-repeat center center/cover;
 }
@@ -72,7 +84,7 @@ header .slide {
 .slide:nth-child(6) {
    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
       url(./../img/slides/6.jpg) no-repeat center center/cover;
-}
+} */
 
 /* INTRODUCTION */
 #introduction {

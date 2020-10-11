@@ -257,7 +257,7 @@ footer .footer-lower {
       background-color: #000;
       opacity: 0;
       z-index: -10;
-      /* pointer-events: none; */
+      pointer-events: none;
       /* transition: opacity 0.3s ease-in; */
    }
 
@@ -270,7 +270,7 @@ footer .footer-lower {
    #nav-main.active ul {
       opacity: 1;
       z-index: 10;
-      /* pointer-events: auto; */
+      pointer-events: auto;
    }
 
    #nav-main.active ul li a {
@@ -359,6 +359,12 @@ footer .footer-lower {
 }
 
 /* UTILITY CLASSES */
+
+.container {
+   width: 90%;
+   max-width: 1500px;
+   margin: 0 auto;
+}
 
 .btn {
    border: none;
