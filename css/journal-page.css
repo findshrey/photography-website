@@ -1,23 +1,22 @@
-#journal-page {
-   padding: calc(4.5rem + 1.5vw) 0;
+.journal-page {
+   padding: var(--section-padding);
 }
 
-#journal-page .page-wrapper {
+.journal-page .container {
    width: 60%;
-   margin: 0 auto;
 }
 
-.page-wrapper header {
+.journal-page header {
    text-align: center;
    margin-bottom: calc(4rem + 1.5vw);
 }
 
-.page-wrapper img {
+.journal-page img {
    width: 100%;
 }
 
 @media (max-width: 800px) {
-   #journal-page .page-wrapper {
+   .journal-page .container {
       width: 90%;
    }
 }
