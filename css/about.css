@@ -27,11 +27,12 @@
 .about-lead-title h2 {
    margin-bottom: 1rem;
    color: var(--special-color);
-   letter-spacing: calc(0.4rem + 0.30vw );
+   letter-spacing: calc(0.2rem + 0.30vw );
 }
 
 .about-lead-title h4 {
-   letter-spacing: 0.3rem;
+   letter-spacing: 0.2rem;
+   font-size: var(--text);
    line-height: 1.8;
 }
 

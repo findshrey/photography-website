@@ -26,6 +26,7 @@
 .contact-lead-title h2 {
    margin-bottom: 1rem;
    color: var(--special-color);
+   letter-spacing: calc(0.1rem + 0.10vw );
 }
 
 .contact-lead-title p {

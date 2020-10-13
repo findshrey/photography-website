@@ -8,7 +8,7 @@
    padding: 0;
 }
 
-/* Logo Fonts */
+/* Heading Font */
 @font-face {
    font-family: 'Josefin Sans Thin';
    src: url(./../fonts/JosefinSans-Thin.ttf);
@@ -19,13 +19,7 @@
    src: url(./../fonts/JosefinSans-Light.ttf);
 }
 
-/* Heading Fonts */
-@font-face {
-   font-family: 'Tenderness';
-   src: url(./../fonts/Tenderness.otf);
-}
-
-/* Text Fonts */
+/* Text Font */
 @font-face {
    font-family: 'Overpass Light';
    src: url(./../fonts/Overpass-Light.ttf);
@@ -71,21 +65,18 @@ h1 {
 }
 
 h2 {
-   font-family: 'Tenderness', sans-serif;
+   font-family: 'Josefin Sans Light', sans-serif;
    font-size: var(--header2);
-   letter-spacing: calc(0.1rem + 0.30vw);
 }
 
 h3 {
-   font-family: 'Tenderness', sans-serif;
+   font-family: 'Josefin Sans Light', sans-serif;
    font-size: var(--header3);
-   letter-spacing: calc(0.1rem + 0.10vw);
 }
 
 h4 {
-   font-family: 'Tenderness', sans-serif;
+   font-family: 'Josefin Sans Light', sans-serif;
    font-size: var(--header4);
-   letter-spacing: calc(0.1rem + 0.10vw);
 }
 
 ul {
@@ -147,9 +138,12 @@ header .nav-wrapper {
 
 /* FOOTER */
 footer .footer-upper {
-   display: flex;
-   padding: 5rem 5vw;   /* 90% of the container width */
    background: var(--bg-primary);
+   padding: var(--section-padding);
+}
+
+.footer-upper .container {
+   display: flex;
 }
 
 .footer-upper .instagram-footer {
@@ -159,16 +153,15 @@ footer .footer-upper {
 .instagram-footer span {
    display: block;
    margin-bottom: 3rem;
-   font-size: var(--small-text);
 }
 
-.instagram-footer .img-container {
+.instagram-footer .img-wrapper {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: calc(0.5rem + 0.5vw);
+   gap: 0.5rem;
 }
 
-.img-container img {
+.img-wrapper img {
    width: 100%;
    height: 100%;
    object-fit: cover;
@@ -185,7 +178,7 @@ footer .footer-upper {
 }
 
 .inquire-footer p {
-   margin: clamp(2rem, 1.8rem + 1vw, 4rem) 0;
+   margin: calc(1.8rem + 0.80vw) 0;
    line-height: 1.8;
    font-size: var(--small-text);
 }
@@ -195,7 +188,10 @@ footer .footer-upper {
 }
 
 footer .footer-lower {
-   padding: 5rem 5vw;
+   padding: 5rem 0;
+}
+
+.footer-lower .container {
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -206,7 +202,7 @@ footer .footer-lower {
 }
 
 .nav-footer a {
-   margin-left: clamp(1.5rem, 1rem + 1vw, 3rem);
+   margin-left: calc(1rem + 1vw);
    font-size: var(--small-text);
 }
 
@@ -313,7 +309,7 @@ footer .footer-lower {
    }
 
    /* FOOTER */
-   footer .footer-upper {
+   .footer-upper .container {
       flex-direction: column;
    }
 
@@ -321,17 +317,17 @@ footer .footer-lower {
       text-align: center;
    }
 
-   .instagram-footer .img-container {
+   .instagram-footer .img-wrapper {
       grid-template-columns: repeat(2, 1fr);
    }
 
    .footer-upper .inquire-footer {
-      padding: 3rem 0 0 0;
+      padding: 5rem 0 0 0;
       align-items: center;
       text-align: center;
    }
 
-   footer .footer-lower {
+   .footer-lower .container {
       flex-direction: column-reverse;
       text-align: center;
    }
@@ -353,11 +349,8 @@ footer .footer-lower {
       --small-text: 1rem;
    }
 
-   h1, h3, h4 {
+   h1 {
       letter-spacing: 0.1rem;
-   }
-   h2 {
-      letter-spacing: 0.2rem;
    }
 }
 

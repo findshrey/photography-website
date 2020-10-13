@@ -20,6 +20,10 @@ header .nav-wrapper {
    color: var(--white);
 }
 
+.logo h4 {
+   letter-spacing: calc(0.1rem + 0.10vw);
+}
+
 #nav-main li a:hover {
    border-bottom: 0.1rem solid var(--white);
 }
@@ -54,37 +58,6 @@ header::after {
    height: 100%;
    background: rgba(0, 0, 0, 0.2);
 }
-
-/* Auto Slideshow Images */
-/* .slide:first-child {
-   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
-      url(./../img/slides/1.jpg) no-repeat center center/cover;
-}
-
-.slide:nth-child(2) {
-   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
-      url(./../img/slides/2.jpg) no-repeat center center/cover;
-}
-
-.slide:nth-child(3) {
-   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
-      url(./../img/slides/3.jpg) no-repeat center center/cover;
-}
-
-.slide:nth-child(4) {
-   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
-      url(./../img/slides/4.jpg) no-repeat center center/cover;
-}
-
-.slide:nth-child(5) {
-   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
-      url(./../img/slides/5.jpg) no-repeat center center/cover;
-}
-
-.slide:nth-child(6) {
-   background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
-      url(./../img/slides/6.jpg) no-repeat center center/cover;
-} */
 
 /* INTRODUCTION */
 .introduction {
@@ -313,11 +286,6 @@ header::after {
 
    .gallery6 {
       background: var(--bg-primary);
-   }
-
-   /* FEATURED REVIEWS */
-   .featured-reviews {
-      height: 45rem;
    }
 
    /* ABOUT */

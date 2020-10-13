@@ -7,15 +7,14 @@
    text-align: center;
    margin-bottom: var(--page-head-margin);
    text-transform: uppercase;
+   letter-spacing: calc(0.1rem + 0.10vw );
 }
 
-.client-reviews header h2 {
-   text-transform: uppercase;
+.client-reviews h2 {
    color: var(--special-color);
-   letter-spacing: calc(0.4rem + 0.30vw );
 }
 
-.client-reviews header h4 {
+.client-reviews h4 {
    font-family: 'Overpass Light', sans-serif;
 }
 

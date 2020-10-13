@@ -7,11 +7,15 @@
    text-align: center;
    margin-bottom: var(--page-head-margin);
    text-transform: uppercase;
+   letter-spacing: calc(0.1rem + 0.10vw );
 }
 
-.journal header h2 {
+.journal h2 {
    color: var(--special-color);
-   letter-spacing: calc(0.4rem + 0.30vw );
+}
+
+.journal h4 {
+   font-family: 'Overpass Light', sans-serif;
 }
 
 .journal .pages-wrapper {
@@ -27,6 +31,10 @@
    align-items: baseline;
    border-bottom: 1px solid var(--matte-black);
    margin-bottom: 2rem;
+}
+
+.page-title h4 {
+   font-size: var(--text);
 }
 
 /* For hover effect */
