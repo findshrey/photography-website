@@ -1,41 +1,40 @@
 /* CLIENT REVIEWS */
-#client-reviews {
-   padding: calc(4.5rem + 1.5vw) 0;
+.client-reviews {
+   padding: var(--section-padding);
 }
 
-#client-reviews header {
+.client-reviews header {
    text-align: center;
-   margin-bottom: calc(4rem + 1vw);
+   margin-bottom: var(--page-head-margin);
+   text-transform: uppercase;
 }
 
-#client-reviews header h2 {
+.client-reviews header h2 {
    text-transform: uppercase;
    color: var(--special-color);
    letter-spacing: calc(0.4rem + 0.30vw );
 }
 
-#client-reviews header h4 {
+.client-reviews header h4 {
    font-family: 'Overpass Light', sans-serif;
 }
 
-#client-reviews .reviews-wrapper {
-   width: 70%;
-   margin: 0 auto;
-   max-width: 1440px;
+.client-reviews .reviews-wrapper {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: calc(4rem + 3vw) calc(2rem + 3vw);
+   margin-top: 5rem;
 }
 
 .reviews-wrapper .review {
-   margin-bottom: calc(3rem + 1.5vw);
+   background: var(--bg-primary);
+   padding: 4rem calc(2rem + 1.5vw);
 }
 
-.reviews-wrapper .review:last-child {
-   margin-bottom: 0;
-}
-
-.review h4 {
+.review h3 {
    text-transform: uppercase;
-   margin-bottom: calc(1rem + 0.25vw);
-   font-size: var(--text);
+   margin-bottom: calc(2rem + 1.5vw);
+   text-align: center;
 }
 
 .review p {
@@ -44,15 +43,17 @@
 }
 
 @media (max-width: 800px) {
-   /* CLIENT REVIEWS */
-   #client-reviews .reviews-wrapper {
-      width: 80%;
+   .client-reviews .reviews-wrapper {
+      grid-template-columns: 1fr;
+   }
+
+   .review p {
+      text-align: center;
    }
 }
 
 @media (max-width: 500px) {
-   #client-reviews .reviews-wrapper {
-      width: 90%;
-      padding: 0 1rem;
+   .reviews-wrapper .review {
+      padding: 4rem 2rem;
    }
 }

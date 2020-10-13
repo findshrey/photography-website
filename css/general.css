@@ -52,6 +52,9 @@ html {
    --matte-black: #333;
    --bg-primary: #f4f2f1;
    --special-color: #ff971d;
+   /* Padding & Margins */
+   --section-padding: calc(5rem + 3vw) 0;
+   --page-head-margin: calc(5rem + 2vw);
 }
 
 body {

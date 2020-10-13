@@ -1,24 +1,18 @@
 /* CONTACT LEAD */
-#contact-lead {
+.contact-lead {
    padding: calc(4rem + 1.5vw) 0;
 }
 
-#contact-lead .contact-lead-wrapper {
-   width: 90%;
-   max-width: 1920px;
-   margin: 0 auto;
+.contact-lead .container {
    display: flex;
 }
 
-.contact-lead-wrapper .lead-img-wrapper {
-   height: clamp(40rem, 45vw, 80rem);
+.lead-img-wrapper {
    flex: 1 1 45%;
-   padding: 0 calc(2rem + 1vw);
 }
 
-.lead-img-wrapper .lead-img {
-   background: url(./../img/gg.jpg) no-repeat center center/cover;
-   height: 100%;
+.lead-img-wrapper img {
+   width: 100%;
 }
 
 .contact-lead-title {
@@ -40,15 +34,9 @@
 }
 
 /* CONTACT FORM */
-#contact-form {
+.contact-form {
    padding: calc(5rem + 2vw) 0;
    background: var(--bg-primary);
-}
-
-#contact-form .form-wrapper {
-   width: 70%;
-   max-width: 1440px;
-   margin: 0 auto;
 }
 
 /* Input field */
@@ -194,12 +182,8 @@ form .form-submit {
 
 @media (max-width: 800px) {
    /* CONTACT LEAD */
-   #contact-lead .contact-lead-wrapper {
+   .contact-lead .container {
       flex-direction: column-reverse;
-   }
-
-   .contact-lead-wrapper .lead-img-wrapper {
-      padding: 0;
    }
 
    .contact-lead-title {
@@ -209,9 +193,6 @@ form .form-submit {
    }
 
    /* CONTACT FORM */
-   #contact-form .form-wrapper {
-      width: 60%;
-   }
 
    /* Input field */
    form .form-control-input {
@@ -242,13 +223,5 @@ form .form-submit {
 
    .coverage-options label:nth-child(2) {
       margin: 1.5rem 0;
-   }
-}
-
-@media (max-width: 500px) {
-   /* CONTACT FORM */
-   #contact-form .form-wrapper {
-      width: 90%;
-      padding: 0 1rem;
    }
 }

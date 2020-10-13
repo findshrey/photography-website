@@ -87,10 +87,9 @@ header::after {
 } */
 
 /* INTRODUCTION */
-#introduction {
-   min-height: 50rem;
+.introduction {
    background: var(--bg-primary);
-   padding: 2rem;
+   padding: calc(10rem + 3vw) 2rem;
    text-transform: uppercase;
    display: flex;
    flex-direction: column;
@@ -99,12 +98,12 @@ header::after {
    text-align: center;
 }
 
-#introduction h2 {
+.introduction h2 {
    margin: 4rem 0;
    color: var(--special-color);
 }
 
-#introduction p {
+.introduction p {
    font-size: var(--small-text);
    letter-spacing: 0.2rem;
    font-weight: 700;
@@ -112,19 +111,17 @@ header::after {
 }
 
 /* FEATURED GALLERY */
-#featured-gallery {
-   padding: calc(5rem + 3vw) 0;
+.featured-gallery {
+   padding: var(--section-padding);
 }
 
-#featured-gallery .gallery-wrapper {
-   width: 90%;
-   margin: 0 auto;
+.featured-gallery .container {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: calc(0.5rem + 0.5vw);
 }
 
-.gallery-wrapper img {
+.featured-gallery img {
    display: block;
    width: 100%;
    height: 100%;
@@ -178,16 +175,13 @@ header::after {
 }
 
 /* FEATURED REVIEWS */
-#featured-reviews {
+.featured-reviews {
    height: 50rem;
    padding: 5rem 0;
    background: var(--bg-primary);
 }
 
-#featured-reviews .reviews-wrapper {
-   width: 90%;
-   max-width: 1440px;
-   margin: 0 auto;
+.featured-reviews .container {
    height: 100%;
    display: flex;
    flex-direction: column;
@@ -195,18 +189,18 @@ header::after {
    align-items: center;
 }
 
-.reviews-wrapper h2 {
+.featured-reviews h2 {
    text-align: center;
 }
 
-.reviews-wrapper .reviews-container {
+.featured-reviews .reviews-wrapper {
    position: relative;
-   width: 100%;
    height: 100%;
+   width: 100%;
    overflow: hidden;
 }
 
-.reviews-container .review {
+.reviews-wrapper .review {
    position: absolute;
    top: 0;
    left: 0;
@@ -240,7 +234,7 @@ header::after {
    line-height: 1.7;
 }
 
-#featured-reviews .review-nav {
+.featured-reviews .review-nav {
    display: flex;
    align-items: center;
 }
@@ -262,18 +256,15 @@ header::after {
 }
 
 /* ABOUT */
-#about {
-   padding: calc(5rem + 3vw) 0;
+.about {
+   padding: var(--section-padding);
 }
 
-#about .about-wrapper {
-   width: 90%;
-   max-width: 1440px;
-   margin: 0 auto;
+.about .container {
    display: flex;
 }
 
-.about-wrapper .text-area {
+.about .text-area {
    flex: 1;
    display: flex;
    flex-direction: column;
@@ -283,17 +274,16 @@ header::after {
    padding-right: 5rem;
 }
 
-.about-wrapper .text-area h2 {
-   margin-top: clamp(2rem , 1rem + 1.25vw, 3rem);
-   margin-bottom: clamp(3.5rem, 2rem + 1.25vw, 5rem);
+.about .text-area h2 {
+   margin: calc(1rem + 1vw) 0 calc(2rem + 1vw) 0;
    color: var(--special-color);
 }
 
-.about-wrapper .text-area a {
-   margin-top: clamp(3rem, 2.5rem + 1.5vw, 5rem);
+.about .text-area a {
+   margin-top: calc(2.5rem + 1vw);
 }
 
-.about-wrapper .about-img {
+.about .about-img {
    flex: 1;
 }
 
@@ -304,23 +294,13 @@ header::after {
    object-fit: cover;
 }
 
-
 @media (max-width: 800px) {
-   /* INTRODUCTION */
-   #introduction {
-      min-height: 45rem;
-   }
-
    /* FEATURED GALLERY */
-   #featured-gallery {
-      padding: 6rem 0;
-   }
-
-   #featured-gallery .gallery-wrapper {
+   .featured-gallery .container {
       grid-template-columns: 1fr;
    }
    
-   .gallery-wrapper > * {
+   .featured-gallery .container > * {
       grid-column: span 1;
       grid-row: span 1;
    }
@@ -336,43 +316,25 @@ header::after {
    }
 
    /* FEATURED REVIEWS */
-   #featured-reviews {
+   .featured-reviews {
       height: 45rem;
    }
 
    /* ABOUT */
-   #about {
-      padding: 6rem 0;
-   }
-
-   #about .about-wrapper {
+   .about .container {
       flex-direction: column;
    }
 
-   .about-wrapper .text-area {
+   .about .text-area {
       padding: 0 0 5rem 0;
    }
 
-   .about-wrapper .text-area h2 br,
-   .about-wrapper .text-area h4 br {
+   .about .text-area br {
       display: none;
    }
 
    .text-area h4 {
       word-spacing: 0.2rem;
-   }
-}
-
-
-@media (max-width: 500px) {
-   /* INTRODUCTION */
-   #introduction {
-      min-height: 40rem;
-   }
-
-   /* FEATURED REVIEWS */
-   #featured-reviews {
-      padding: 3rem 0;
    }
 }
 
