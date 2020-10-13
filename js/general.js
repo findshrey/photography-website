@@ -18,7 +18,7 @@ hamburger.addEventListener('click', () => {
    })
 })
 
-// Animation
+// SECTION FADE-IN ANIMATION
 const sections = document.querySelectorAll('.section-fade-in')
 
 const options = {
