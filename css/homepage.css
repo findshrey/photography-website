@@ -1,11 +1,11 @@
 /* SHOWCASE */
-header {
+.header-showcase {
    min-height: 100vh;
    overflow: hidden;
    position: relative;
 }
 
-header .nav-wrapper {
+.main-head {
    position: absolute;
    top: 0;
    left: 0;
@@ -28,12 +28,12 @@ header .nav-wrapper {
    border-bottom: 0.1rem solid var(--c-white);
 }
 
-.nav-wrapper #hamburger {
+.main-head #hamburger {
    color: var(--c-white);
 }
 
 /* Auto Slideshow */
-header .slide {
+.showcase .slide {
    position: absolute;
    top: 0;
    left: 0;
@@ -49,7 +49,7 @@ header .slide {
 }
 
 /* Overlay for showcase */
-header::after {
+.header-showcase::after {
    content: '';
    position: absolute;
    top: 0;
