@@ -1,4 +1,3 @@
-
 /* BASE SETTINGS */
 *, 
 *::before, 
@@ -34,49 +33,50 @@ html {
    font-size: 62.5%;
    scroll-behavior: smooth;
    /* Header Sizes */
-   --header1: calc(2rem + 1.25vw);
-   --header2: calc(2.5rem + 1.25vw);
-   --header3: calc(1.3rem + 1.25vw);
-   --header4: calc(0.8rem + 0.5vw);
+   --h1: calc(2rem + 1.25vw);
+   --h2: calc(2.5rem + 1.25vw);
+   --h3: calc(1.3rem + 1.25vw);
+   --h4: calc(0.8rem + 0.5vw);
    /* Text Sizes */
-   --text: calc(1rem + 0.5vw);
-   --small-text: calc(0.8rem + 0.5vw);
+   --font-m: calc(1rem + 0.5vw);
+   --font-s: calc(0.8rem + 0.5vw);
    /* Colors */
-   --white: #fff;
-   --matte-black: #333;
-   --bg-primary: #f4f2f1;
-   --special-color: #ff971d;
+   --c-white: #fff;
+   --c-black: #333;
+   --c-ghost-white: #f4f2f1;
+   --c-mustard: #ff971d;
    /* Padding & Margins */
    --section-padding: calc(5rem + 3vw) 0;
    --page-head-margin: calc(5rem + 2vw);
 }
 
 body {
-   background: var(--white);
-   color: var(--matte-black);
+   background: var(--c-white);
+   color: var(--c-black);
    font-family: 'Overpass Regular', sans-serif;
    line-height: 1.5;
 }
 
 h1 {
    font-family: 'Josefin Sans Thin', sans-serif;
-   font-size: var(--header1);
+   font-size: var(--h1);
    letter-spacing: calc(0.1rem + 0.25vw);
 }
-
 h2 {
    font-family: 'Josefin Sans Light', sans-serif;
-   font-size: var(--header2);
+   font-size: var(--h2);
 }
-
 h3 {
    font-family: 'Josefin Sans Light', sans-serif;
-   font-size: var(--header3);
+   font-size: var(--h3);
 }
-
 h4 {
    font-family: 'Josefin Sans Light', sans-serif;
-   font-size: var(--header4);
+   font-size: var(--h4);
+}
+
+div, span, p, a, li, button, label, input {
+   font-size: var(--font-m);
 }
 
 ul {
@@ -84,12 +84,32 @@ ul {
 }
 
 a {
-   color: var(--matte-black);
+   color: var(--c-black);
    text-decoration: none;
 }
 
-p, span, li, a, label, input, button {
-   font-size: var(--text);
+button {
+   font-family: inherit;
+}
+
+/* UTILITY CLASSES */
+.container {
+   width: 90%;
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+.btn {
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid var(--c-black);
+   color: var(--c-black);
+   cursor: pointer;
+   font-style: italic;
+}
+
+.btn:focus {
+   outline: none;
 }
 
 /* MAIN NAVIGATION */
@@ -99,7 +119,7 @@ header .nav-wrapper {
    align-items: center;
    padding: 4rem 2rem;
    text-transform: uppercase;
-   background: var(--bg-primary);
+   background: var(--c-ghost-white);
 }
 
 .nav-wrapper .logo {
@@ -122,14 +142,14 @@ header .nav-wrapper {
 }
 
 #nav-main li a {
-   color: var(--matte-black);
-   font-size: var(--small-text);
+   color: var(--c-black);
+   font-size: var(--font-s);
    letter-spacing: 0.2rem;
    font-family: 'Overpass Light';
 }
 
 #nav-main li a:hover {
-   border-bottom: 0.1rem solid var(--matte-black);
+   border-bottom: 0.1rem solid var(--c-black);
 }
 
 .nav-wrapper #hamburger {
@@ -138,7 +158,7 @@ header .nav-wrapper {
 
 /* FOOTER */
 footer .footer-upper {
-   background: var(--bg-primary);
+   background: var(--c-ghost-white);
    padding: var(--section-padding);
 }
 
@@ -179,11 +199,11 @@ footer .footer-upper {
 .inquire-footer p {
    margin: calc(1.8rem + 0.80vw) 0;
    line-height: 1.8;
-   font-size: var(--small-text);
+   font-size: var(--font-s);
 }
 
 .inquire-footer a {
-   font-size: var(--small-text);
+   font-size: var(--font-s);
 }
 
 footer .footer-lower {
@@ -202,7 +222,7 @@ footer .footer-lower {
 
 .nav-footer a {
    margin-left: calc(1rem + 1vw);
-   font-size: var(--small-text);
+   font-size: var(--font-s);
 }
 
 .nav-footer ul li:first-child a {
@@ -272,23 +292,23 @@ footer .footer-lower {
    }
 
    #nav-main.active ul li a {
-      color: var(--white);
+      color: var(--c-white);
    }
 
    #nav-main.active ul li a:hover {
-      border-bottom: 1px solid var(--white);
+      border-bottom: 1px solid var(--c-white);
    }
 
    .nav-wrapper #hamburger {
       font-size: calc(2rem + 1vw);
       display: block;
-      color: var(--matte-black);
+      color: var(--c-black);
       cursor: pointer;
       transition: transform 0.5s ease;
    }
 
    #hamburger.active {
-      color: var(--white);
+      color: var(--c-white);
       position: fixed;
       top: 4rem;
       right: 2rem;
@@ -339,38 +359,16 @@ footer .footer-lower {
 @media (max-width: 500px) {
    html {
       /* Header Sizes */
-      --header1: 2.5rem;
-      --header2: 2.5rem;
-      --header3: 2rem;
-      --header4: 1rem;
+      --h1: 2.5rem;
+      --h2: 2.5rem;
+      --h3: 2rem;
+      --h4: 1rem;
       /* Text Sizes */
-      --text: 1.2rem;
-      --small-text: 1rem;
+      --font-m: 1.2rem;
+      --font-s: 1rem;
    }
 
    h1 {
       letter-spacing: 0.1rem;
    }
-}
-
-/* UTILITY CLASSES */
-
-.container {
-   width: 90%;
-   max-width: 1500px;
-   margin: 0 auto;
-}
-
-.btn {
-   border: none;
-   border-bottom: 1px solid var(--matte-black);
-   font-style: italic;
-   cursor: pointer;
-   background: transparent;
-   color: var(--matte-black);
-   font-family: 'Overpass Regular', sans-serif;
-}
-
-.btn:focus {
-   outline: none;
 }

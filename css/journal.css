@@ -11,7 +11,7 @@
 }
 
 .journal h2 {
-   color: var(--special-color);
+   color: var(--c-mustard);
 }
 
 .journal h4 {
@@ -29,12 +29,12 @@
    display: flex;
    justify-content: space-between;
    align-items: baseline;
-   border-bottom: 1px solid var(--matte-black);
+   border-bottom: 1px solid var(--c-black);
    margin-bottom: 2rem;
 }
 
 .page-title h4 {
-   font-size: var(--text);
+   font-size: var(--font-m);
 }
 
 /* For hover effect */

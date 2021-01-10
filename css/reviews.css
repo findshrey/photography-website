@@ -11,7 +11,7 @@
 }
 
 .client-reviews h2 {
-   color: var(--special-color);
+   color: var(--c-mustard);
 }
 
 .client-reviews h4 {
@@ -26,7 +26,7 @@
 }
 
 .reviews-wrapper .review {
-   background: var(--bg-primary);
+   background: var(--c-ghost-white);
    padding: 4rem calc(2rem + 1.5vw);
 }
 

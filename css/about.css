@@ -26,13 +26,13 @@
 
 .about-lead-title h2 {
    margin-bottom: 1rem;
-   color: var(--special-color);
+   color: var(--c-mustard);
    letter-spacing: calc(0.2rem + 0.30vw );
 }
 
 .about-lead-title h4 {
    letter-spacing: 0.2rem;
-   font-size: var(--text);
+   font-size: var(--font-m);
    line-height: 1.8;
 }
 
@@ -42,7 +42,7 @@
    grid-template-columns: repeat(2, 1fr);
    gap: calc(3.5rem + 1vw);
    padding: calc(4rem + 1vw) calc(2rem + 1vw);
-   background: var(--bg-primary);
+   background: var(--c-ghost-white);
    line-height: 2;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .achievements p {
-   font-size: var(--small-text);
+   font-size: var(--font-s);
    line-height: 1.8;
 }
 

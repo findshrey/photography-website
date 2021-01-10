@@ -17,7 +17,7 @@ header .nav-wrapper {
 .logo h1,
 .logo h4,
 #nav-main li a {
-   color: var(--white);
+   color: var(--c-white);
 }
 
 .logo h4 {
@@ -25,11 +25,11 @@ header .nav-wrapper {
 }
 
 #nav-main li a:hover {
-   border-bottom: 0.1rem solid var(--white);
+   border-bottom: 0.1rem solid var(--c-white);
 }
 
 .nav-wrapper #hamburger {
-   color: var(--white);
+   color: var(--c-white);
 }
 
 /* Auto Slideshow */
@@ -61,7 +61,7 @@ header::after {
 
 /* INTRODUCTION */
 .introduction {
-   background: var(--bg-primary);
+   background: var(--c-ghost-white);
    padding: calc(10rem + 3vw) 2rem;
    text-transform: uppercase;
    display: flex;
@@ -73,11 +73,11 @@ header::after {
 
 .introduction h2 {
    margin: 4rem 0;
-   color: var(--special-color);
+   color: var(--c-mustard);
 }
 
 .introduction p {
-   font-size: var(--small-text);
+   font-size: var(--font-s);
    letter-spacing: 0.2rem;
    font-weight: 700;
    line-height: 2.2;
@@ -151,7 +151,7 @@ header::after {
 .featured-reviews {
    height: 50rem;
    padding: 5rem 0;
-   background: var(--bg-primary);
+   background: var(--c-ghost-white);
 }
 
 .featured-reviews .container {
@@ -197,7 +197,7 @@ header::after {
 }
 
 .review h4 {
-   font-size: var(--text);
+   font-size: var(--font-m);
    margin-bottom: 1.5rem;
 }
 
@@ -216,7 +216,7 @@ header::after {
    border: none;
    cursor: pointer;
    background: transparent;
-   font-size: calc(var(--header4) + 1rem);
+   font-size: calc(var(--h4) + 1rem);
 }
 
 .review-nav button:focus {
@@ -225,7 +225,7 @@ header::after {
 
 .review-nav p {
    margin: 0 2rem;
-   font-size: calc(var(--header4) + 0.2rem);
+   font-size: calc(var(--h4) + 0.2rem);
 }
 
 /* ABOUT */
@@ -249,7 +249,7 @@ header::after {
 
 .about .text-area h2 {
    margin: calc(1rem + 1vw) 0 calc(2rem + 1vw) 0;
-   color: var(--special-color);
+   color: var(--c-mustard);
 }
 
 .about .text-area a {
@@ -285,7 +285,7 @@ header::after {
    }
 
    .gallery6 {
-      background: var(--bg-primary);
+      background: var(--c-ghost-white);
    }
 
    /* ABOUT */
@@ -310,11 +310,11 @@ header::after {
    html {
       /* font-size: 80%; */
       /* Header Sizes */
-      /* --header2: 50px; */
-      /* --header3: 38px; */
-      /* --header4: 20px; */
+      /* --h2: 50px; */
+      /* --h3: 38px; */
+      /* --h4: 20px; */
       /* Text Sizes */
-      /* --text: 26px; */
-      /* --small-text: 20px; */
+      /* --font-m: 26px; */
+      /* --font-s: 20px; */
    }
 }
