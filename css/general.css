@@ -112,21 +112,17 @@ button {
    outline: none;
 }
 
-/* Main Navigation */
+/* NAVIGATION */
 .main-head {
-   padding: 4rem 0;
-   text-transform: uppercase;
    background: var(--c-ghost-white);
+   text-transform: uppercase;
+   padding: 4rem 0;
 }
 
 .main-head .logo {
-   margin-bottom: 4rem;
    text-align: center;
    pointer-events: none;
-}
-
-.logo h4 {
-   font-family: 'Josefin Sans Light';
+   margin-bottom: 4rem;
 }
 
 .nav-main ul {
@@ -136,13 +132,13 @@ button {
 
 .nav-link {
    color: var(--c-black);
-   font-size: var(--font-s);
-   letter-spacing: 0.2rem;
    font-family: 'Overpass Light';
+   font-size: var(--font-s);
+   letter-spacing: 2px;
 }
 
 .nav-link:hover {
-   border-bottom: 0.1rem solid var(--c-black);
+   border-bottom: 1px solid var(--c-black);
 }
 
 .main-head .hamburger {
@@ -250,22 +246,21 @@ footer .footer-lower {
    .main-head .logo {
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
       margin: 0;
+      transform: translateX(-50%);
    }
 
    .nav-main ul {
+      background-color: #000;
       position: fixed;
       left: 0;
       top: 0;
       height: 100%;
       width: 100%;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
       text-align: center;
       padding: 15vh 0;
-      background-color: #000;
       opacity: 0;
       z-index: -10;
       pointer-events: none;
@@ -275,7 +270,7 @@ footer .footer-lower {
    /* Links initially hidden */
    .nav-main li {
       opacity: 0;
-      letter-spacing: 0.2rem;
+      letter-spacing: 2px;
    }
 
    .nav-main.active ul {
@@ -293,10 +288,10 @@ footer .footer-lower {
    }
 
    .main-head .hamburger {
-      font-size: calc(2rem + 1vw);
-      display: block;
+      display: flex;
       color: var(--c-black);
       cursor: pointer;
+      font-size: calc(2rem + 1vw);
       transition: transform 0.5s ease;
    }
 
@@ -304,8 +299,8 @@ footer .footer-lower {
       color: var(--c-white);
       position: fixed;
       top: 4rem;
-      transform: rotate(2turn);
       z-index: 10;
+      transform: rotate(2turn);
    }
 
    @keyframes navLinksFadeIn {

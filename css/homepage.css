@@ -1,34 +1,34 @@
 /* SHOWCASE */
 .header-showcase {
    min-height: 100vh;
-   overflow: hidden;
    position: relative;
+   overflow: hidden;
 }
 
 .main-head {
+   background: transparent;
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    z-index: 10;
-   background: transparent;
 }
 
 .logo h1,
 .logo h4,
-#nav-main li a {
+.nav-link {
    color: var(--c-white);
 }
 
 .logo h4 {
-   letter-spacing: calc(0.1rem + 0.10vw);
+   letter-spacing: calc(1px + 0.10vw);
 }
 
-#nav-main li a:hover {
-   border-bottom: 0.1rem solid var(--c-white);
+.nav-link:hover {
+   border-bottom: 1px solid var(--c-white);
 }
 
-.main-head #hamburger {
+.main-head .hamburger {
    color: var(--c-white);
 }
 
@@ -51,12 +51,12 @@
 /* Overlay for showcase */
 .header-showcase::after {
    content: '';
+   background: rgba(0, 0, 0, 0.2);
    position: absolute;
    top: 0;
    left: 0;
-   width: 100%;
    height: 100%;
-   background: rgba(0, 0, 0, 0.2);
+   width: 100%;
 }
 
 /* INTRODUCTION */

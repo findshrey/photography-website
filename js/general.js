@@ -1,7 +1,7 @@
 // MOBILE NAVIGATION
-const hamburger = document.getElementById('hamburger')
-const nav = document.getElementById('nav-main')
-const navLinks = document.querySelectorAll('#nav-main li')
+const hamburger = document.getElementById('js-hamburger')
+const nav = document.getElementById('js-nav-main')
+const navLinks = document.querySelectorAll('#js-nav-main li')
 
 hamburger.addEventListener('click', () => {
    // Toggle nav
