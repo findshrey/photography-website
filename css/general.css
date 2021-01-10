@@ -5,9 +5,14 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-kerning: auto;
 }
 
-/* Heading Font */
+/* Heading Fonts */
 @font-face {
    font-family: 'Josefin Sans Thin';
    src: url(./../fonts/JosefinSans-Thin.ttf);
@@ -18,7 +23,7 @@
    src: url(./../fonts/JosefinSans-Light.ttf);
 }
 
-/* Text Font */
+/* Text Fonts */
 @font-face {
    font-family: 'Overpass Light';
    src: url(./../fonts/Overpass-Light.ttf);
@@ -33,13 +38,13 @@ html {
    font-size: 62.5%;
    scroll-behavior: smooth;
    /* Header Sizes */
-   --h1: calc(2rem + 1.25vw);
-   --h2: calc(2.5rem + 1.25vw);
-   --h3: calc(1.3rem + 1.25vw);
-   --h4: calc(0.8rem + 0.5vw);
+   --h1: clamp(3rem, calc(2rem + 1.5vw), 4.5rem);
+   --h2: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
+   --h3: clamp(2.5rem, calc(1.3rem + 1.25vw), 3.5rem);
+   --h4: clamp(1.3rem, calc(0.8rem + 0.5vw), 2rem);
    /* Text Sizes */
-   --font-m: calc(1rem + 0.5vw);
-   --font-s: calc(0.8rem + 0.5vw);
+   --font-m: clamp(1.5rem, calc(1rem + 0.5vw), 2rem);
+   --font-s: clamp(1.3rem, calc(0.8rem + 0.5vw), 1.8rem);
    /* Colors */
    --c-white: #fff;
    --c-black: #333;
@@ -60,7 +65,7 @@ body {
 h1 {
    font-family: 'Josefin Sans Thin', sans-serif;
    font-size: var(--h1);
-   letter-spacing: calc(0.1rem + 0.25vw);
+   letter-spacing: calc(1px + 0.25vw);
 }
 h2 {
    font-family: 'Josefin Sans Light', sans-serif;
@@ -121,8 +126,13 @@ button {
 
 .main-head .logo {
    text-align: center;
-   pointer-events: none;
+   /* pointer-events: none; */
    margin-bottom: 4rem;
+}
+
+.logo h4 {
+   font-family: 'Josefin Sans Thin';
+   letter-spacing: calc(1px + 0.10vw);
 }
 
 .nav-main ul {
@@ -132,9 +142,8 @@ button {
 
 .nav-link {
    color: var(--c-black);
-   font-family: 'Overpass Light';
    font-size: var(--font-s);
-   letter-spacing: 2px;
+   letter-spacing: 1px;
 }
 
 .nav-link:hover {
@@ -146,7 +155,7 @@ button {
 }
 
 /* FOOTER */
-footer .footer-upper {
+.footer-upper {
    background: var(--c-ghost-white);
    padding: var(--section-padding);
 }
@@ -155,47 +164,47 @@ footer .footer-upper {
    display: flex;
 }
 
-.footer-upper .instagram-footer {
+.footer-instagram {
    flex: 1;
 }
 
-.instagram-footer span {
+.footer-instagram span {
    display: block;
    margin-bottom: 3rem;
 }
 
-.instagram-footer .img-wrapper {
+.footer-instagram .img-wrapper {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 0.5rem;
 }
 
-.img-wrapper img {
+.footer-instagram img {
+   display: block;
    width: 100%;
    object-fit: cover;
-   display: block;
 }
 
-.footer-upper .inquire-footer {
+.footer-upper .footer-contact {
    flex: 1;
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: flex-start;
-   padding-left: 5rem;
+   justify-content: center;
+   margin-left: 5rem;
 }
 
-.inquire-footer p {
-   margin: calc(1.8rem + 0.80vw) 0;
+.footer-contact p {
+   font-size: var(--font-s);
    line-height: 1.8;
+   margin: calc(1.8rem + 0.75vw) 0;
+}
+
+.footer-contact a {
    font-size: var(--font-s);
 }
 
-.inquire-footer a {
-   font-size: var(--font-s);
-}
-
-footer .footer-lower {
+.footer-lower {
    padding: 5rem 0;
 }
 
@@ -210,11 +219,11 @@ footer .footer-lower {
 }
 
 .nav-footer a {
-   margin-left: calc(1rem + 1vw);
    font-size: var(--font-s);
+   margin-left: calc(1rem + 1vw);
 }
 
-.nav-footer ul li:first-child a {
+.nav-footer li:first-child a {
    margin-left: 0;
 }
 
@@ -226,7 +235,6 @@ footer .footer-lower {
 @keyframes sectionFadeIn {
    from {
       transform: translateY(200px);
-      opacity: 0;
    }
 
    to {
@@ -251,7 +259,7 @@ footer .footer-lower {
    }
 
    .nav-main ul {
-      background-color: #000;
+      background-color: #0d0d0d;
       position: fixed;
       left: 0;
       top: 0;
@@ -319,18 +327,18 @@ footer .footer-lower {
       flex-direction: column;
    }
 
-   .footer-upper .instagram-footer {
+   .footer-instagram {
       text-align: center;
    }
 
-   .instagram-footer .img-wrapper {
+   .footer-instagram .img-wrapper {
       grid-template-columns: repeat(2, 1fr);
    }
 
-   .footer-upper .inquire-footer {
-      padding: 5rem 0 0 0;
+   .footer-upper .footer-contact {
       align-items: center;
       text-align: center;
+      margin: 5rem 0 0 0;
    }
 
    .footer-lower .container {
@@ -349,13 +357,13 @@ footer .footer-lower {
       --h1: 2.5rem;
       --h2: 2.5rem;
       --h3: 2rem;
-      --h4: 1rem;
+      --h4: 1.2rem;
       /* Text Sizes */
-      --font-m: 1.2rem;
-      --font-s: 1rem;
+      --font-m: 1.3rem;
+      --font-s: 1.1rem;
    }
 
    h1 {
-      letter-spacing: 0.1rem;
+      letter-spacing: 1px;
    }
 }
