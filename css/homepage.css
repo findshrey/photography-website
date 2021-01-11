@@ -1,4 +1,4 @@
-/* SHOWCASE */
+/* NAVIGATION & SHOWCASE */
 .header-showcase {
    min-height: 100vh;
    position: relative;
@@ -28,7 +28,7 @@
    color: var(--c-white);
 }
 
-/* Auto Slideshow */
+/* Auto slideshow */
 .showcase .slide {
    position: absolute;
    top: 0;
@@ -241,11 +241,11 @@
 
 .about-text h2 {
    color: var(--c-mustard);
-   margin: 2rem 0 3rem 0; /* calc(1rem + 1vw) 0 calc(2rem + 1vw) 0 */
+   margin: 2rem 0 3rem 0;
 }
 
 .about-text a {
-   margin-top: 3rem; /* calc(2.5rem + 1vw) */
+   margin-top: 3rem;
 }
 
 .about .about-img {

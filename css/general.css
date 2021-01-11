@@ -1,4 +1,4 @@
-/* BASE SETTINGS */
+/* ----- BASE SETTINGS ----- */
 *, 
 *::before, 
 *::after {
@@ -12,7 +12,7 @@
    font-kerning: auto;
 }
 
-/* Heading Fonts */
+/* Heading fonts */
 @font-face {
    font-family: 'Josefin Sans Thin';
    src: url(./../fonts/JosefinSans-Thin.ttf);
@@ -23,7 +23,7 @@
    src: url(./../fonts/JosefinSans-Light.ttf);
 }
 
-/* Text Fonts */
+/* Text fonts */
 @font-face {
    font-family: 'Overpass Light';
    src: url(./../fonts/Overpass-Light.ttf);
@@ -37,12 +37,12 @@
 html {
    font-size: 62.5%;
    scroll-behavior: smooth;
-   /* Header Sizes */
+   /* Header sizes */
    --h1: clamp(3rem, calc(2rem + 1.5vw), 4.5rem);
    --h2: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
    --h3: clamp(2.5rem, calc(1.3rem + 1.25vw), 3.5rem);
    --h4: clamp(1.3rem, calc(0.8rem + 0.5vw), 2rem);
-   /* Text Sizes */
+   /* Text sizes */
    --font-m: clamp(1.5rem, calc(1rem + 0.5vw), 2rem);
    --font-s: clamp(1.3rem, calc(0.8rem + 0.5vw), 1.8rem);
    /* Colors */
@@ -97,7 +97,7 @@ button {
    font-family: inherit;
 }
 
-/* UTILITY CLASSES */
+/* ----- UTILITY CLASSES ----- */
 .container {
    width: 90%;
    max-width: 1440px;
@@ -227,7 +227,7 @@ button {
    margin-left: 0;
 }
 
-/* Section Fade-In Animation */
+/* Animation: Section fade in */
 .section-fade-in {
    opacity: 0;
 }
