@@ -17,9 +17,9 @@ setInterval(nextSlide, 5000)
 
 // REVIEW NAVIGATION
 const reviews = document.querySelectorAll('.review')
-const prevBtn = document.getElementById('prev-review')
-const nextBtn = document.getElementById('next-review')
-const currentReview = document.getElementById('current-review')
+const prevBtn = document.getElementById('js-prev-review')
+const nextBtn = document.getElementById('js-next-review')
+const currentReview = document.getElementById('js-current-review')
 
 let currentActiveReview = 1
 
