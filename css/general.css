@@ -80,7 +80,7 @@ h4 {
    font-size: var(--h4);
 }
 
-div, span, p, a, li, button, label, input {
+div, span, p, a, li, button, label, input, textarea {
    font-size: var(--font-m);
 }
 
@@ -126,12 +126,12 @@ button {
 
 .main-head .logo {
    text-align: center;
-   /* pointer-events: none; */
+   pointer-events: none;
    margin-bottom: 4rem;
 }
 
 .logo h4 {
-   font-family: 'Josefin Sans Thin';
+   font-family: 'Josefin Sans Light';
    letter-spacing: calc(1px + 0.10vw);
 }
 

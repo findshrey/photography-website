@@ -1,6 +1,6 @@
 /* CONTACT LEAD */
 .contact-lead {
-   padding: calc(4rem + 1.5vw) 0;
+   padding: var(--section-padding);
 }
 
 .contact-lead .container {
@@ -20,47 +20,53 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding-right: calc(2rem + 1vw);
+   margin-right: calc(2rem + 1vw);
 }
 
 .contact-lead-title h2 {
-   margin-bottom: 1rem;
    color: var(--c-mustard);
-   letter-spacing: calc(0.1rem + 0.10vw );
+   letter-spacing: calc(1px + 0.10vw );
+   margin-bottom: 1rem;
 }
 
 .contact-lead-title p {
-   line-height: 1.8;
    font-style: italic;
+   line-height: 1.8;
 }
 
 /* CONTACT FORM */
-.contact-form {
-   padding: calc(5rem + 2vw) 0;
+.contact {
    background: var(--c-ghost-white);
+   display: flex;
+   justify-content: center;
+   padding: var(--section-padding);
+}
+
+.form {
+   width: 90%;
+   max-width: 1080px;
 }
 
 /* Input field */
-form .form-control-input {
+.form .form-input {
    display: flex;
    justify-content: space-between;
-   margin-bottom: calc(3.5rem + 1vw);
+   margin-bottom: 4.5rem;
 }
 
-.form-control-input input {
+.form-input input {
    flex-basis: 45%;
    background: var(--c-ghost-white);
    border: none;
    border-bottom: 1px solid var(--c-black);
    padding: 1rem 0;
-   font-family: 'Overpass Light', sans-serif;
 }
 
 input::placeholder {
-   font-family: 'Tenderness', sans-serif;
-   letter-spacing: 0.2rem;
    color: var(--c-black);
+   letter-spacing: 2px;
 }
+
 input:focus {
    outline: none;
 }
@@ -71,38 +77,37 @@ input[type="number"]::-webkit-inner-spin-button {
    -webkit-appearance: none;
    margin: 0;
 }
+
 /* Firefox */
 input[type="number"] {
    -moz-appearance: textfield;
 }
 
 /* Select field */
-form .form-control-select {
+.form .form-select {
    display: flex;
    justify-content: space-between;
-   margin-bottom: calc(3.5rem + 1vw);
+   margin-bottom: 4.5rem;
 }
 
-.form-control-select div {
-   font-family: 'Tenderness', sans-serif;
-   letter-spacing: 0.3rem;
+.form-select div {
+   letter-spacing: 2px;
    margin-bottom: 1rem;
 }
 
-.form-control-select label {
+.form-select label {
    flex-basis: 45%;
 }
 
-.form-control-select select {
+.form-select select {
    appearance: none;
-   width: 100%;
    background: var(--c-ghost-white);
-   padding: 1rem;
    color: var(--c-black);
-   font-family: 'Tenderness', sans-serif;
    font-size: var(--font-m);
    font-style: italic;
-   letter-spacing: 0.2rem;
+   letter-spacing: 2px;
+   width: 100%;
+   padding: 1rem;
 }
 
 select:focus {
@@ -110,20 +115,18 @@ select:focus {
 }
 
 /* Radio field */
-form .form-control-radio {
-   margin-bottom: calc(3.5rem + 1vw);
+.form .form-radio {
+   margin-bottom: 4.5rem;
 }
 
-.form-control-radio .coverage-question {
-   font-family: 'Tenderness', sans-serif;
+.form-radio .coverage-question {
    font-size: var(--font-m);
+   letter-spacing: 2px;
    margin-bottom: 1.5rem;
-   letter-spacing: 0.2rem;
 }
 
-.form-control-radio .coverage-options span {
-   font-family: 'Tenderness', sans-serif;
-   letter-spacing: 0.1rem;
+.coverage-options span {
+   letter-spacing: 1px;
 }
 
 .coverage-options label {
@@ -136,47 +139,43 @@ form .form-control-radio {
 
 input[type="radio"]:checked {
    appearance: none;
-   display: inline-block;
-   width: 13px;
-   height: 13px;
-   border-radius: 50%;
-   border: 1px solid var(--c-mustard);
    background-color: var(--c-mustard);
+   border: 1px solid var(--c-mustard);
+   border-radius: 50%;
    box-shadow: 0px 0px 0px 2px white inset;
+   display: inline-block;
+   height: 13px;
+   width: 13px;
 }
 
 /* Textarea */
-.form-control-textarea {
-   margin-bottom: calc(3.5rem + 1vw);
+.form .form-textarea {
+   margin-bottom: 4.5rem;
 }
 
-.form-control-textarea div {
-   font-family: 'Tenderness', sans-serif;
-   font-size: var(--font-m);
+.form-textarea div {
+   letter-spacing: 2px;
    margin-bottom: 1rem;
-   letter-spacing: 0.2rem;
 }
 
-.form-control-textarea textarea {
-   width: 100%;
-   resize: none;
-   padding: 1rem;
+.form-textarea textarea {
    background: var(--c-ghost-white);
-   font-family: 'Overpass Light', sans-serif;
+   font-family: 'Overpass Regular', sans-serif;
+   resize: none;
+   width: 100%;
+   padding: 1rem;
 }
 
 textarea::placeholder {
-   font-family: 'Tenderness', sans-serif;
-   font-size: var(--font-s);
    font-style: italic;
-   letter-spacing: 0.2rem;
+   letter-spacing: 2px;
 }
 
 textarea:focus {
    outline: none;
 }
 
-form .form-submit {
+.form .form-submit {
    display: flex;
    justify-content: center;
 }
@@ -188,35 +187,34 @@ form .form-submit {
    }
 
    .contact-lead-title {
-      margin-top: 4rem;
+      margin: 4rem 0 0 0;
       text-align: center;
-      padding: 0;
    }
 
    /* CONTACT FORM */
 
    /* Input field */
-   form .form-control-input {
+   .form .form-input {
       flex-direction: column;
       margin: 0;
    }
 
-   .form-control-input input {
+   .form-input input {
       margin-bottom: calc(3rem + 1vw);
    }
 
    /* Select field */
-   form .form-control-select {
+   .form .form-select {
       flex-direction: column;
       margin: 0;
    }
 
-   .form-control-select label {
+   .form-select label {
       margin-bottom: calc(3rem + 1vw);
    }
 
    /* Radio field */
-   .form-control-radio .coverage-options {
+   .form-radio .coverage-options {
       display: flex;
       flex-direction: column;
       align-items: flex-start;

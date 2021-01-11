@@ -36,7 +36,7 @@
 
    <main>
       <!-- CONTACT LEAD -->
-      <section class="contact-lead">
+      <section class="contact-lead section-fade-in">
          <div class="container">
             <header class="contact-lead-title">
                <h2>GET IN TOUCH</h2>
@@ -56,77 +56,75 @@
          </div>
       </section>
 
-      <!-- CONTACT FORM -->
-      <section class="contact-form section-fade-in">
-         <div class="container">
-            <form action="https://formspree.io/xknqyldz" method="POST">
-               <div class="form-control-input">
-                  <input type="text" name="user-name" placeholder="Your Name*" required>
-                  <input type="text" name="partner-name" placeholder="Your Partner's Name">
-               </div>
-               <div class="form-control-input">
-                  <input type="email" name="email" placeholder="Your Email*" required>
-                  <input type="number" name="phone" placeholder="Phone*" required>
-               </div>
-               <div class="form-control-input">
-                  <input type="text" name="date" placeholder="Date*" required>
-                  <input type="text" name="location" placeholder="Location*" required>
-               </div>
-               <div class="form-control-select">
+      <!-- CONTACT -->
+      <section class="contact section-fade-in">
+         <form class="form">
+            <div class="form-input">
+               <input type="text" name="user-name" placeholder="Your Name*" required>
+               <input type="text" name="partner-name" placeholder="Your Partner's Name">
+            </div>
+            <div class="form-input">
+               <input type="email" name="email" placeholder="Your Email*" required>
+               <input type="number" name="phone" placeholder="Phone*" required>
+            </div>
+            <div class="form-input">
+               <input type="text" name="date" placeholder="Date*" required>
+               <input type="text" name="location" placeholder="Location*" required>
+            </div>
+            <div class="form-select">
+               <label>
+                  <div>We want you for...</div>
+                  <select name="requirement">
+                     <option hidden disabled selected value> -- Select an option -- </option>
+                     <option value="Wedding">Wedding</option>
+                     <option value="Elopement">Elopement</option>
+                     <option value="Other">Other</option>
+                  </select>
+               </label>
+               <label>
+                  <div>How did you hear about me ?</div>
+                  <select name="where-you-find-me">
+                     <option hidden disabled selected value> -- Select an option -- </option>
+                     <option value="Client Referral">Client Referral</option>
+                     <option value="Google">Google</option>
+                     <option value="Facebook">Facebook</option>
+                     <option value="Instagram">Instagram</option>
+                     <option value="Wedding Blog">Wedding Blog</option>
+                     <option value="Pinterest">Pinterest</option>
+                     <option value="Other">Other</option>
+                  </select>
+               </label>
+            </div>
+            <div class="form-radio">
+               <div class="coverage-question">Are you interested in wedding weekend coverage ?</div>
+               <div class="coverage-options">
                   <label>
-                     <div>We want you for...</div>
-                     <select name="requirement">
-                        <option hidden disabled selected value> -- Select an option -- </option>
-                        <option value="Wedding">Wedding</option>
-                        <option value="Elopement">Elopement</option>
-                        <option value="Other">Other</option>
-                     </select>
+                     <input type="radio" name="weekend-coverage" value="Yes">
+                     <span>Absolutely!</span>
                   </label>
                   <label>
-                     <div>How did you hear about me ?</div>
-                     <select name="where-you-find-me">
-                        <option hidden disabled selected value> -- Select an option -- </option>
-                        <option value="Client Referral">Client Referral</option>
-                        <option value="Google">Google</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Wedding Blog">Wedding Blog</option>
-                        <option value="Pinterest">Pinterest</option>
-                        <option value="Other">Other</option>
-                     </select>
+                     <input type="radio" name="weekend-coverage" value="Not Sure">
+                     <span>Still deciding</span>
+                  </label>
+                  <label>
+                     <input type="radio" name="weekend-coverage" value="No">
+                     <span>Nah we good!</span>
                   </label>
                </div>
-               <div class="form-control-radio">
-                  <div class="coverage-question">Are you interested in wedding weekend coverage ?</div>
-                  <div class="coverage-options">
-                     <label>
-                        <input type="radio" name="weekend-coverage" value="Yes">
-                        <span>Absolutely!</span>
-                     </label>
-                     <label>
-                        <input type="radio" name="weekend-coverage" value="Not Sure">
-                        <span>Still deciding</span>
-                     </label>
-                     <label>
-                        <input type="radio" name="weekend-coverage" value="No">
-                        <span>Nah we good!</span>
-                     </label>
-                  </div>
-               </div>
-               <div class="form-control-textarea">
-                  <div>Tell me about you two! Give me details.</div>
-                  <textarea name="about-user" rows="8" placeholder="Hobbies? Favourive shows? Food? How you met?">
+            </div>
+            <div class="form-textarea">
+               <div>Tell me about you two! Give me details.</div>
+               <textarea name="about-user" rows="8" placeholder="Hobbies? Favourive shows? Food? How you met?">
                   </textarea>
-               </div>
-               <div class="form-control-textarea">
-                  <div>Any questions for me ?</div>
-                  <textarea name="user-questions" rows="8" placeholder="Fire away!"></textarea>
-               </div>
-               <div class="form-submit">
-                  <button type="submit" class="btn">Submit</button>
-               </div>
-            </form>
-         </div>
+            </div>
+            <div class="form-textarea">
+               <div>Any questions for me ?</div>
+               <textarea name="user-questions" rows="8" placeholder="Fire away!"></textarea>
+            </div>
+            <div class="form-submit">
+               <button type="submit" class="btn">Submit</button>
+            </div>
+         </form>
       </section>
    </main>
 
