@@ -5,9 +5,9 @@
 
 .journal header {
    text-align: center;
-   margin-bottom: var(--page-head-margin);
    text-transform: uppercase;
    letter-spacing: calc(0.1rem + 0.10vw );
+   margin-bottom: var(--page-head-margin);
 }
 
 .journal h2 {
@@ -19,16 +19,16 @@
 }
 
 .journal .pages-wrapper {
-   margin-top: 5rem;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: calc(5rem + 3vw) calc(5rem + 1vw);
+   margin-top: 5rem;
 }
 
 .page .page-title {
    display: flex;
-   justify-content: space-between;
    align-items: baseline;
+   justify-content: space-between;
    border-bottom: 1px solid var(--c-black);
    margin-bottom: 2rem;
 }
@@ -46,7 +46,7 @@
 .page a img {
    width: 100%;
    display: block;
-   transition: all 0.5s ease;
+   transition: all 0.4s ease;
 }
 .page a:hover img {
    transform: scale(1.1);

@@ -20,30 +20,33 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding-left: calc(2rem + 1vw);
    text-transform: uppercase;
+   margin-left: calc(2rem + 1vw);
 }
 
 .about-lead-title h2 {
-   margin-bottom: 1rem;
    color: var(--c-mustard);
-   letter-spacing: calc(0.2rem + 0.30vw );
+   letter-spacing: calc(2px + 0.30vw );
+   margin-bottom: 1rem;
 }
 
 .about-lead-title h4 {
-   letter-spacing: 0.2rem;
    font-size: var(--font-m);
+   letter-spacing: 2px;
    line-height: 1.8;
 }
 
 /* ABOUT */
+.about {
+   background: var(--c-ghost-white);
+   line-height: 2;
+   padding: var(--section-padding);
+}
+
 .about .container {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: calc(3.5rem + 1vw);
-   padding: calc(4rem + 1vw) calc(2rem + 1vw);
-   background: var(--c-ghost-white);
-   line-height: 2;
 }
 
 /* ACHIEVEMENTS */
@@ -77,9 +80,8 @@
    }
 
    .about-lead-title {
-      margin-top: 4rem;
       text-align: center;
-      padding: 0;
+      margin: 4rem 0 0 0;
    }
 
    /* ABOUT */
