@@ -4,6 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
    <link rel="icon" type="image/png" href="./../img/favicon.png">
    <link rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -41,119 +43,7 @@
             <header>
                <h3>Lindsey & Jayce | Aspens</h3>
             </header>
-            <div class="images-container">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_1_ypwcp4.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_1_ypwcp4.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_1_ypwcp4.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_1_ypwcp4.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_2_qrsonu.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_2_qrsonu.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_2_qrsonu.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_2_qrsonu.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_3_plzrim.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_3_plzrim.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_3_plzrim.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_3_plzrim.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_4_oncdsc.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_4_oncdsc.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_4_oncdsc.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_4_oncdsc.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_5_ii53aa.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_5_ii53aa.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_5_ii53aa.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_5_ii53aa.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_6_c7owq7.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_6_c7owq7.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_6_c7owq7.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_6_c7owq7.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_7_kvgbxt.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_7_kvgbxt.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_7_kvgbxt.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_7_kvgbxt.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_8_m2v6n5.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_8_m2v6n5.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_8_m2v6n5.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_8_m2v6n5.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_10_erjeht.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_10_erjeht.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_10_erjeht.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_10_erjeht.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_11_f1fade.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_11_f1fade.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_11_f1fade.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_11_f1fade.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_12_oxrztc.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_12_oxrztc.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_12_oxrztc.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_12_oxrztc.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_13_gxacpd.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_13_gxacpd.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_13_gxacpd.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_13_gxacpd.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_16_fgiol8.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_16_fgiol8.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_16_fgiol8.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_16_fgiol8.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_17_fwehaz.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_17_fwehaz.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_17_fwehaz.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_17_fwehaz.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_18_x6xwul.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_18_x6xwul.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_18_x6xwul.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_18_x6xwul.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_19_oed5be.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/lindsey-jayce/lindsey-jayce_19_oed5be.jpg 500w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/lindsey-jayce/lindsey-jayce_19_oed5be.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/lindsey-jayce/lindsey-jayce_19_oed5be.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
+            <div id="js-img-container" class="images-container">
             </div>
          </div>
       </section>
@@ -234,7 +124,24 @@
       </div>
    </footer>
 
+   <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+         apiKey: "AIzaSyBuce6dKf82np_4dDheBeHaRXfiM8dFhAc",
+         authDomain: "emma-earl.firebaseapp.com",
+         projectId: "emma-earl",
+         storageBucket: "emma-earl.appspot.com",
+         messagingSenderId: "840315310107",
+         appId: "1:840315310107:web:18491a5c227bdd7720a8be"
+      }
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig)
+      const db = firebase.firestore()
+   </script>
+
    <script src="./../js/general.js"></script>
+   <script src="./../js/firestore.js"></script>
 </body>
 
 </html>
