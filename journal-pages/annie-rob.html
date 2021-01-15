@@ -4,6 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
    <link rel="icon" type="image/png" href="./../img/favicon.png">
    <link rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -42,8 +44,8 @@
             <header>
                <h3>Annie & Rob | Dreamy Fall Sedona</h3>
             </header>
-            <div class="images-container">
-               <img
+            <div id="js-img-container" class="images-container">
+               <!-- <img
                   src="https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/annie-rob/annie-rob_1_pyaogj.jpg"
                   srcset="
                      https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/annie-rob/annie-rob_1_pyaogj.jpg 500w,
@@ -175,7 +177,7 @@
                   https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_500/emma-earl/journal/annie-rob/annie-rob_22_xm7x0x.jpg 500w,
                   https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1000/emma-earl/journal/annie-rob/annie-rob_22_xm7x0x.jpg 1000w,
                   https://res.cloudinary.com/dg4arvkpw/image/upload/f_auto,w_1500/emma-earl/journal/annie-rob/annie-rob_22_xm7x0x.jpg 1500w"
-                  sizes="(max-width: 800px) 90vw, 60vw">
+                  sizes="(max-width: 800px) 90vw, 60vw"> -->
             </div>
          </div>
       </section>
@@ -256,7 +258,24 @@
       </div>
    </footer>
 
+   <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+         apiKey: "AIzaSyBuce6dKf82np_4dDheBeHaRXfiM8dFhAc",
+         authDomain: "emma-earl.firebaseapp.com",
+         projectId: "emma-earl",
+         storageBucket: "emma-earl.appspot.com",
+         messagingSenderId: "840315310107",
+         appId: "1:840315310107:web:18491a5c227bdd7720a8be"
+      }
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig)
+      const db = firebase.firestore()
+   </script>
+
    <script src="./../js/general.js"></script>
+   <script src="./../js/firestore.js"></script>
 </body>
 
 </html>
