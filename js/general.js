@@ -41,3 +41,27 @@ const observer = new IntersectionObserver(callback, options)
 sections.forEach((section) => {
    observer.observe(section)
 })
+
+// FOOTER IMAGES
+const footerImages = document.getElementById('js-footer-img')
+
+// Create element and render image
+const renderFooterImage = (doc) => {
+   const img = document.createElement('img')
+
+   // Setup image
+   img.setAttribute('src', `${doc.data().sm}`)
+   img.setAttribute('srcset',
+      `${doc.data().sm} 500w, 
+      ${doc.data().md} 1000w`
+   )
+
+   footerImages.appendChild(img)
+}
+
+// Get collection data
+db.collection(`footer-instagram`).get().then((snapshot) => {
+   snapshot.docs.forEach(doc => {
+      renderFooterImage(doc)
+   })
+})
