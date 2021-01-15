@@ -4,6 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
    <link rel="icon" type="image/png" href="./img/favicon.png">
    <link rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -143,44 +145,7 @@
          <div class="container">
             <div class="footer-instagram">
                <span>LATEST ON INSTAGRAM</span>
-               <div class="img-wrapper">
-                  <img
-                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_1_gau1ne.jpg"
-                     srcset="
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_1_gau1ne.jpg 500w,
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/footer-insta/footer-insta_1_gau1ne.jpg 1000w"
-                     alt="Instagram image 1">
-                  <img
-                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_2_xguxa6.jpg"
-                     srcset="
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_2_xguxa6.jpg 500w,
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/footer-insta/footer-insta_2_xguxa6.jpg 1000w"
-                     alt="Instagram image 2">
-                  <img
-                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_3_gjvyd7.jpg"
-                     srcset="
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_3_gjvyd7.jpg 500w,
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/footer-insta/footer-insta_3_gjvyd7.jpg 1000w"
-                     alt="Instagram image 3">
-                  <img
-                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_4_rtkx29.jpg"
-                     srcset="
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_4_rtkx29.jpg 500w,
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/footer-insta/footer-insta_4_rtkx29.jpg 1000w"
-                     alt="Instagram image 4">
-                  <img
-                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_5_co9csh.jpg"
-                     srcset="
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_5_co9csh.jpg 500w,
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/footer-insta/footer-insta_5_co9csh.jpg 1000w"
-                     alt="Instagram image 5">
-                  <img
-                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_6_gmhht9.jpg"
-                     srcset="
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/footer-insta/footer-insta_6_gmhht9.jpg 500w,
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/footer-insta/footer-insta_6_gmhht9.jpg 1000w"
-                     alt="Instagram image 6">
-               </div>
+               <div id="js-footer-img" class="img-wrapper"></div>
             </div>
             <div class="footer-contact">
                <h3>Let’s capture what makes your <br>
@@ -211,6 +176,22 @@
          </div>
       </div>
    </footer>
+
+   <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+         apiKey: "AIzaSyBuce6dKf82np_4dDheBeHaRXfiM8dFhAc",
+         authDomain: "emma-earl.firebaseapp.com",
+         projectId: "emma-earl",
+         storageBucket: "emma-earl.appspot.com",
+         messagingSenderId: "840315310107",
+         appId: "1:840315310107:web:18491a5c227bdd7720a8be"
+      }
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig)
+      const db = firebase.firestore()
+   </script>
 
    <script src="./js/general.js"></script>
 </body>
