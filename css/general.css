@@ -261,9 +261,9 @@ button {
    .nav-main ul {
       background-color: #0d0d0d;
       position: fixed;
-      left: 0;
       top: 0;
-      height: 100%;
+      left: 0;
+      height: 100vh;
       width: 100%;
       flex-direction: column;
       align-items: center;
