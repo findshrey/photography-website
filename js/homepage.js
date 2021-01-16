@@ -11,11 +11,10 @@ const renderShowcaseImage = (doc) => {
    activeSlide ? img.classList.add('current') : null
    img.setAttribute('src', `${doc.data().sm}`)
    img.setAttribute('srcset',
-      `${doc.data().sm} 700w, 
-      ${doc.data().md} 1400w, 
-      ${doc.data().lg} 2100w`
+      `${doc.data().sm} 800w, 
+      ${doc.data().md} 1500w, 
+      ${doc.data().lg} 2200w`
    )
-   img.setAttribute('sizes', '(max-width: 800px) 90vw, 60vw')
 
    showcaseImages.appendChild(img)
 }
