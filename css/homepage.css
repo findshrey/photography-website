@@ -279,6 +279,11 @@
       background: var(--c-ghost-white);
    }
 
+   /* FEATURED REVIEWS */
+   .featured-reviews {
+      height: 55rem;
+   }
+
    /* ABOUT */
    .about .container {
       flex-direction: column;

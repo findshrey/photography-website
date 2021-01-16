@@ -42,7 +42,7 @@ sections.forEach((section) => {
    observer.observe(section)
 })
 
-// FOOTER IMAGES
+// GET FOOTER IMAGES
 const footerImages = document.getElementById('js-footer-img')
 
 // Create element and render image

@@ -1,18 +1,52 @@
-// AUTO SLIDESHOW
-const slides = document.querySelectorAll('.slide')
+// GET SHOWCASE IMAGE
+const showcaseImages = document.getElementById('js-showcase')
 
-const nextSlide = () => {
-   const current = document.querySelector('.current')
-   current.classList.remove('current')
+let activeSlide = true
 
-   if (current.nextElementSibling) {
-      current.nextElementSibling.classList.add('current')
-   } else {
-      slides[0].classList.add('current')
-   }
+const renderShowcaseImage = (doc) => {
+   const img = document.createElement('img')
+
+   // Setup image
+   img.classList.add('slide')
+   activeSlide ? img.classList.add('current') : null
+   img.setAttribute('src', `${doc.data().sm}`)
+   img.setAttribute('srcset',
+      `${doc.data().sm} 700w, 
+      ${doc.data().md} 1400w, 
+      ${doc.data().lg} 2100w`
+   )
+   img.setAttribute('sizes', '(max-width: 800px) 90vw, 60vw')
+
+   showcaseImages.appendChild(img)
 }
 
-setInterval(nextSlide, 5000)
+db.collection('showcase').get().then((snapshot) => {
+   snapshot.docs.forEach(doc => {
+      renderShowcaseImage(doc)
+      activeSlide = false
+   })
+})
+
+
+// AUTO SLIDESHOW
+const slideShow = () => {
+   const slides = document.querySelectorAll('.slide')
+
+   const nextSlide = () => {
+      const current = document.querySelector('.current')
+      current.classList.remove('current')
+
+      if (current.nextElementSibling) {
+         current.nextElementSibling.classList.add('current')
+      } else {
+         slides[0].classList.add('current')
+      }
+   }
+
+   setInterval(nextSlide, 5000)
+}
+setTimeout(slideShow, 1000)
+
 
 
 // REVIEW NAVIGATION
