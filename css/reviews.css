@@ -1,6 +1,6 @@
 /* CLIENT REVIEWS */
 .client-reviews {
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .client-reviews header {
@@ -14,10 +14,6 @@
    color: var(--c-mustard);
 }
 
-.client-reviews h4 {
-   font-family: 'Overpass Light', sans-serif;
-}
-
 .client-reviews .reviews-wrapper {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -26,7 +22,7 @@
 }
 
 .reviews-wrapper .review {
-   background: var(--c-ghost-white);
+   background: var(--c-white-ghost);
    padding: 4rem calc(2rem + 1.5vw);
 }
 

@@ -1,6 +1,6 @@
 /* JOURNAL PAGE */
 .journal-page {
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .journal-page .container {

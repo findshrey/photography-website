@@ -57,7 +57,7 @@
 
 /* INTRODUCTION */
 .introduction {
-   background: var(--c-ghost-white);
+   background: var(--c-white-ghost);
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -81,7 +81,7 @@
 
 /* FEATURED GALLERY */
 .featured-gallery {
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .featured-gallery .container {
@@ -141,7 +141,7 @@
 
 /* FEATURED REVIEWS */
 .featured-reviews {
-   background: var(--c-ghost-white);
+   background: var(--c-white-ghost);
    height: 50rem;
    padding: 5rem 0;
 }
@@ -194,8 +194,8 @@
 }
 
 .review p {
-   font-family: 'Overpass Light';
    font-style: italic;
+   font-weight: 300;
    line-height: 1.7;
 }
 
@@ -222,7 +222,7 @@
 
 /* ABOUT */
 .about {
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .about .container {
@@ -276,7 +276,7 @@
       display: none;
    }
    .gallery6 {
-      background: var(--c-ghost-white);
+      background: var(--c-white-ghost);
    }
 
    /* FEATURED REVIEWS */

@@ -1,6 +1,6 @@
 /* ABOUT LEAD */
 .about-lead {
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .about-lead .container {
@@ -38,9 +38,9 @@
 
 /* ABOUT */
 .about {
-   background: var(--c-ghost-white);
+   background: var(--c-white-ghost);
    line-height: 2;
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .about .container {
@@ -51,7 +51,7 @@
 
 /* ACHIEVEMENTS */
 .achievements {
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .achievements .container {

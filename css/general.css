@@ -12,31 +12,12 @@
    font-kerning: auto;
 }
 
-/* Heading fonts */
-@font-face {
-   font-family: 'Josefin Sans Thin';
-   src: url(./../fonts/JosefinSans-Thin.ttf);
-}
-
-@font-face {
-   font-family: 'Josefin Sans Light';
-   src: url(./../fonts/JosefinSans-Light.ttf);
-}
-
-/* Text fonts */
-@font-face {
-   font-family: 'Overpass Light';
-   src: url(./../fonts/Overpass-Light.ttf);
-}
-
-@font-face {
-   font-family: 'Overpass Regular';
-   src: url(./../fonts/Overpass-Regular.ttf);
-}
-
 html {
    font-size: 62.5%;
    scroll-behavior: smooth;
+   /* Fonts */
+   --font-heading: 'Josefin Sans', sans-serif;
+   --font-body: 'Overpass', sans-serif;
    /* Header sizes */
    --h1: clamp(3rem, calc(2rem + 1.5vw), 4.5rem);
    --h2: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
@@ -47,37 +28,41 @@ html {
    --font-s: clamp(1.3rem, calc(0.8rem + 0.5vw), 1.8rem);
    /* Colors */
    --c-white: #fff;
-   --c-black: #333;
-   --c-ghost-white: #f4f2f1;
+   --c-black-matte: #333;
+   --c-white-ghost: #f4f2f1;
    --c-mustard: #ff971d;
    /* Padding & Margins */
-   --section-padding: calc(5rem + 3vw) 0;
+   --padding-section: calc(5rem + 3vw) 0;
    --page-head-margin: calc(5rem + 2vw);
 }
 
 body {
    background: var(--c-white);
-   color: var(--c-black);
-   font-family: 'Overpass Regular', sans-serif;
+   color: var(--c-black-matte);
+   font-family: var(--font-body);
    line-height: 1.5;
 }
 
 h1 {
-   font-family: 'Josefin Sans Thin', sans-serif;
+   font-family: var(--font-heading);
    font-size: var(--h1);
+   font-weight: 300;
    letter-spacing: calc(1px + 0.25vw);
 }
 h2 {
-   font-family: 'Josefin Sans Light', sans-serif;
+   font-family: var(--font-heading);
    font-size: var(--h2);
+   font-weight: 350;
 }
 h3 {
-   font-family: 'Josefin Sans Light', sans-serif;
+   font-family: var(--font-heading);
    font-size: var(--h3);
+   font-weight: 350;
 }
 h4 {
-   font-family: 'Josefin Sans Light', sans-serif;
+   font-family: var(--font-heading);
    font-size: var(--h4);
+   font-weight: 400;
 }
 
 div, span, p, a, li, button, label, input, textarea {
@@ -89,7 +74,7 @@ ul {
 }
 
 a {
-   color: var(--c-black);
+   color: var(--c-black-matte);
    text-decoration: none;
 }
 
@@ -107,8 +92,8 @@ button {
 .btn {
    background: transparent;
    border: none;
-   border-bottom: 1px solid var(--c-black);
-   color: var(--c-black);
+   border-bottom: 1px solid var(--c-black-matte);
+   color: var(--c-black-matte);
    cursor: pointer;
    font-style: italic;
 }
@@ -119,7 +104,7 @@ button {
 
 /* NAVIGATION */
 .main-head {
-   background: var(--c-ghost-white);
+   background: var(--c-white-ghost);
    text-transform: uppercase;
    padding: 4rem 0;
 }
@@ -130,8 +115,8 @@ button {
    margin-bottom: 4rem;
 }
 
-.logo h4 {
-   font-family: 'Josefin Sans Light';
+.logo .small-text {
+   font-weight: 350;
    letter-spacing: calc(1px + 0.10vw);
 }
 
@@ -141,13 +126,13 @@ button {
 }
 
 .nav-link {
-   color: var(--c-black);
+   color: var(--c-black-matte);
    font-size: var(--font-s);
    letter-spacing: 1px;
 }
 
 .nav-link:hover {
-   border-bottom: 1px solid var(--c-black);
+   border-bottom: 1px solid var(--c-black-matte);
 }
 
 .main-head .hamburger {
@@ -156,8 +141,8 @@ button {
 
 /* FOOTER */
 .footer-upper {
-   background: var(--c-ghost-white);
-   padding: var(--section-padding);
+   background: var(--c-white-ghost);
+   padding: var(--padding-section);
 }
 
 .footer-upper .container {
@@ -297,7 +282,7 @@ button {
 
    .main-head .hamburger {
       display: flex;
-      color: var(--c-black);
+      color: var(--c-black-matte);
       cursor: pointer;
       font-size: calc(2rem + 1vw);
       transition: transform 0.5s ease;

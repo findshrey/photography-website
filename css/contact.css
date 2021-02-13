@@ -1,6 +1,6 @@
 /* CONTACT LEAD */
 .contact-lead {
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .contact-lead .container {
@@ -36,10 +36,10 @@
 
 /* CONTACT FORM */
 .contact {
-   background: var(--c-ghost-white);
+   background: var(--c-white-ghost);
    display: flex;
    justify-content: center;
-   padding: var(--section-padding);
+   padding: var(--padding-section);
 }
 
 .form {
@@ -56,14 +56,14 @@
 
 .form-input input {
    flex-basis: 45%;
-   background: var(--c-ghost-white);
+   background: var(--c-white-ghost);
    border: none;
-   border-bottom: 1px solid var(--c-black);
+   border-bottom: 1px solid var(--c-black-matte);
    padding: 1rem 0;
 }
 
 input::placeholder {
-   color: var(--c-black);
+   color: var(--c-black-matte);
    letter-spacing: 2px;
 }
 
@@ -101,8 +101,8 @@ input[type="number"] {
 
 .form-select select {
    appearance: none;
-   background: var(--c-ghost-white);
-   color: var(--c-black);
+   background: var(--c-white-ghost);
+   color: var(--c-black-matte);
    font-size: var(--font-m);
    font-style: italic;
    letter-spacing: 2px;
@@ -159,8 +159,8 @@ input[type="radio"]:checked {
 }
 
 .form-textarea textarea {
-   background: var(--c-ghost-white);
-   font-family: 'Overpass Regular', sans-serif;
+   background: var(--c-white-ghost);
+   font-family: inherit;
    resize: none;
    width: 100%;
    padding: 1rem;
