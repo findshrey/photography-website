@@ -69,6 +69,8 @@
 
 .introduction .text-xl {
    color: var(--c-mustard);
+   font-family: var(--font-heading);
+   font-weight: 350;
    margin: 4rem 0;
 }
 
