@@ -1,4 +1,4 @@
-// GET SHOWCASE IMAGE
+// GET SHOWCASE IMAGES FROM FIRESTORE
 const showcaseImages = document.getElementById('js-showcase')
 
 let activeSlide = true
@@ -26,7 +26,6 @@ db.collection('showcase').get().then((snapshot) => {
    })
 })
 
-
 // AUTO SLIDESHOW
 const slideShow = () => {
    const slides = document.querySelectorAll('.slide')
@@ -45,8 +44,6 @@ const slideShow = () => {
    setInterval(nextSlide, 5000)
 }
 setTimeout(slideShow, 1000)
-
-
 
 // REVIEW NAVIGATION
 const reviews = document.querySelectorAll('.review')

@@ -1,3 +1,4 @@
+// GET JOURNAL IMAGES FROM FIRESTORE
 const journalPageImages = document.getElementById('js-journal-page-img')
 
 // Create element and render image

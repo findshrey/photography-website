@@ -103,7 +103,6 @@ input[type="number"] {
    appearance: none;
    background: var(--c-white-ghost);
    color: var(--c-black-matte);
-   font-size: var(--font-m);
    font-style: italic;
    letter-spacing: 2px;
    width: 100%;

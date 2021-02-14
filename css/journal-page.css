@@ -12,6 +12,10 @@
    margin-bottom: calc(4rem + 1.5vw);
 }
 
+.journal-page .images-container {
+   min-height: 100vh;
+}
+
 .journal-page img {
    width: 100%;
 }

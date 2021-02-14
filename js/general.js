@@ -59,9 +59,12 @@ const renderFooterImage = (doc) => {
    footerImages.appendChild(img)
 }
 
-// Get collection data
-db.collection(`footer-instagram`).get().then((snapshot) => {
-   snapshot.docs.forEach(doc => {
-      renderFooterImage(doc)
+// Check if on Contact page
+if (!location.pathname.includes('contact')) {
+   // Get collection data
+   db.collection(`footer-instagram`).get().then((snapshot) => {
+      snapshot.docs.forEach(doc => {
+         renderFooterImage(doc)
+      })
    })
-})
+}
