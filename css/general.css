@@ -34,7 +34,7 @@ html {
    --c-mustard: #ff971d;
    --c-white: #fff;
    --c-white-ghost: #f4f2f1;
-   /* Padding & Margins */
+   /* Paddings & Margins */
    --padding-section: calc(5rem + 3vw) 0;
    --page-head-margin: calc(5rem + 2vw);
 }
