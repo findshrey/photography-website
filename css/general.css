@@ -1,6 +1,6 @@
 /* ----- BASE SETTINGS ----- */
-*, 
-*::before, 
+*,
+*::before,
 *::after {
    box-sizing: border-box;
    margin: 0;
@@ -16,8 +16,8 @@ html {
    font-size: 62.5%;
    scroll-behavior: smooth;
    /* Fonts */
-   --font-heading: 'Josefin Sans', sans-serif;
-   --font-body: 'Overpass', sans-serif;
+   --font-heading: "Josefin Sans", sans-serif;
+   --font-body: "Overpass", sans-serif;
    /* Header sizes */
    --h1: clamp(3rem, calc(2rem + 1.5vw), 4.5rem);
    --h2: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
@@ -68,7 +68,16 @@ h4 {
    font-weight: 400;
 }
 
-div, span, p, a, li, button, label, input, textarea, select {
+div,
+span,
+p,
+a,
+li,
+button,
+label,
+input,
+textarea,
+select {
    font-size: var(--font-m);
 }
 
@@ -127,7 +136,7 @@ button {
 
 .logo .small-text {
    font-weight: 350;
-   letter-spacing: calc(1px + 0.10vw);
+   letter-spacing: calc(1px + 0.1vw);
 }
 
 .nav-main ul {

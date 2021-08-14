@@ -1,115 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;375;400&family=Overpass:wght@300;400&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+      />
+      <link rel="icon" type="image/png" href="./../img/favicon.png" />
+      <link rel="stylesheet" href="./../css/general.css" />
+      <link rel="stylesheet" href="./../css/journal-page.css" />
+      <title>Jessica & Paul | Telluride</title>
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;375;400&family=Overpass:wght@300;400&display=swap"
-      rel="stylesheet">
-   <link rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-   <link rel="icon" type="image/png" href="./../img/favicon.png">
-   <link rel="stylesheet" href="./../css/general.css">
-   <link rel="stylesheet" href="./../css/journal-page.css">
-   <title>Jessica & Paul | Telluride</title>
-</head>
-
-<body>
-   <!-- NAVIGATION -->
-   <header class="main-head">
-      <div class="container">
-         <div class="logo">
-            <h1>
-               Emma&nbsp;Earl
-               <div class="small-text">Photography</div>
-            </h1>
-         </div>
-         <nav id="js-nav-main" class="nav-main">
-            <ul>
-               <li><a href="./../index.html" class="nav-link">Home</a></li>
-               <li><a href="./../journal.html" class="nav-link">My Work</a></li>
-               <li><a href="./../reviews.html" class="nav-link">Reviews</a></li>
-               <li><a href="./../about.html" class="nav-link">About Me</a></li>
-               <li><a href="./../contact.html" class="nav-link">Contact</a></li>
-            </ul>
-         </nav>
-         <div id="js-hamburger" class="hamburger">
-            <i class="las la-bars"></i>
-         </div>
-      </div>
-   </header>
-
-   <main>
-      <section class="journal-page">
+   <body>
+      <!-- NAVIGATION -->
+      <header class="main-head">
          <div class="container">
-            <header>
-               <h3>Jessica & Paul | Telluride</h3>
-            </header>
-            <div id="js-journal-page-img" class="images-container"></div>
-         </div>
-      </section>
-   </main>
-
-   <!-- FOOTER -->
-   <footer class="section-fade-in">
-      <div class="footer-upper">
-         <div class="container">
-            <div class="upper-left">
-               <div class="title">LATEST ON INSTAGRAM</div>
-               <div id="js-footer-img" class="img-wrapper"></div>
+            <div class="logo">
+               <h1>
+                  Emma&nbsp;Earl
+                  <div class="small-text">Photography</div>
+               </h1>
             </div>
-            <div class="upper-right">
-               <h3>Let’s capture what makes your <br>
-                  heart beat hardest, together.</h3>
-               <p>THIS IS WHERE THE MAGIC HAPPENS. IT’S WHERE YOU BASICALLY ASK ME OUT ON A DATE AS YOUR THIRD WHEEL AND
-                  I
-                  SAY YES, AND WE BECOME BFF’S.</p>
-               <a href="./../contact.html" class="btn">Inquire Now</a>
-            </div>
-         </div>
-      </div>
-
-      <div class="footer-lower">
-         <div class="container">
-            <div class="copyright">
-               <h4>Copyright &copy; 2020</h4>
-               <span>Emma Earl Photography</span>
-            </div>
-            <nav class="nav-footer">
+            <nav id="js-nav-main" class="nav-main">
                <ul>
-                  <li><a href="./../index.html">HOME</a></li>
-                  <li><a href="./../journal.html">MY WORK</a></li>
-                  <li><a href="./../reviews.html">REVIEWS</a></li>
-                  <li><a href="./../about.html">ABOUT ME</a></li>
-                  <li><a href="./../contact.html">CONTACT</a></li>
+                  <li><a href="./../index.html" class="nav-link">Home</a></li>
+                  <li>
+                     <a href="./../journal.html" class="nav-link">My Work</a>
+                  </li>
+                  <li>
+                     <a href="./../reviews.html" class="nav-link">Reviews</a>
+                  </li>
+                  <li>
+                     <a href="./../about.html" class="nav-link">About Me</a>
+                  </li>
+                  <li>
+                     <a href="./../contact.html" class="nav-link">Contact</a>
+                  </li>
                </ul>
             </nav>
+            <div id="js-hamburger" class="hamburger">
+               <i class="las la-bars"></i>
+            </div>
          </div>
-      </div>
-   </footer>
+      </header>
 
-   <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-         apiKey: "AIzaSyBuce6dKf82np_4dDheBeHaRXfiM8dFhAc",
-         authDomain: "emma-earl.firebaseapp.com",
-         projectId: "emma-earl",
-         storageBucket: "emma-earl.appspot.com",
-         messagingSenderId: "840315310107",
-         appId: "1:840315310107:web:18491a5c227bdd7720a8be"
-      }
+      <main>
+         <section class="journal-page">
+            <div class="container">
+               <header>
+                  <h3>Jessica & Paul | Telluride</h3>
+               </header>
+               <div id="js-journal-page-img" class="images-container"></div>
+            </div>
+         </section>
+      </main>
 
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig)
-      const db = firebase.firestore()
-   </script>
+      <!-- FOOTER -->
+      <footer class="section-fade-in">
+         <div class="footer-upper">
+            <div class="container">
+               <div class="upper-left">
+                  <div class="title">LATEST ON INSTAGRAM</div>
+                  <div id="js-footer-img" class="img-wrapper"></div>
+               </div>
+               <div class="upper-right">
+                  <h3>
+                     Let’s capture what makes your <br />
+                     heart beat hardest, together.
+                  </h3>
+                  <p>
+                     THIS IS WHERE THE MAGIC HAPPENS. IT’S WHERE YOU BASICALLY
+                     ASK ME OUT ON A DATE AS YOUR THIRD WHEEL AND I SAY YES, AND
+                     WE BECOME BFF’S.
+                  </p>
+                  <a href="./../contact.html" class="btn">Inquire Now</a>
+               </div>
+            </div>
+         </div>
 
-   <script src="./../js/general.js"></script>
-   <script src="./../js/journal-page.js"></script>
-</body>
+         <div class="footer-lower">
+            <div class="container">
+               <div class="copyright">
+                  <h4>Copyright &copy; 2020</h4>
+                  <span>Emma Earl Photography</span>
+               </div>
+               <nav class="nav-footer">
+                  <ul>
+                     <li><a href="./../index.html">HOME</a></li>
+                     <li><a href="./../journal.html">MY WORK</a></li>
+                     <li><a href="./../reviews.html">REVIEWS</a></li>
+                     <li><a href="./../about.html">ABOUT ME</a></li>
+                     <li><a href="./../contact.html">CONTACT</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </footer>
 
+      <script>
+         // Your web app's Firebase configuration
+         var firebaseConfig = {
+            apiKey: "AIzaSyBuce6dKf82np_4dDheBeHaRXfiM8dFhAc",
+            authDomain: "emma-earl.firebaseapp.com",
+            projectId: "emma-earl",
+            storageBucket: "emma-earl.appspot.com",
+            messagingSenderId: "840315310107",
+            appId: "1:840315310107:web:18491a5c227bdd7720a8be",
+         }
+
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig)
+         const db = firebase.firestore()
+      </script>
+
+      <script src="./../js/general.js"></script>
+      <script src="./../js/journal-page.js"></script>
+   </body>
 </html>

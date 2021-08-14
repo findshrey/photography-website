@@ -6,7 +6,7 @@
 .journal header {
    text-align: center;
    text-transform: uppercase;
-   letter-spacing: calc(0.1rem + 0.10vw );
+   letter-spacing: calc(0.1rem + 0.1vw);
    margin-bottom: var(--page-head-margin);
 }
 

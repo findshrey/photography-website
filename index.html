@@ -1,260 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Destination Wedding Photographer" />
+      <meta name="robots" content="index, follow" />
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;375;400&family=Overpass:wght@300;400&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+      />
+      <link rel="icon" type="image/png" href="./img/favicon.png" />
+      <link rel="stylesheet" href="./css/general.css" />
+      <link rel="stylesheet" href="./css/homepage.css" />
+      <title>Emma Earl | Destination Wedding Photographer</title>
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Destination Wedding Photographer">
-   <meta name="robots" content="index, follow">
-   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;375;400&family=Overpass:wght@300;400&display=swap"
-      rel="stylesheet">
-   <link rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-   <link rel="icon" type="image/png" href="./img/favicon.png">
-   <link rel="stylesheet" href="./css/general.css">
-   <link rel="stylesheet" href="./css/homepage.css">
-   <title>Emma Earl | Destination Wedding Photographer</title>
-</head>
-
-<body>
-   <!-- NAVIGATION & SHOWCASE -->
-   <div class="header-showcase">
-      <header class="main-head">
-         <div class="container">
-            <div class="logo">
-               <h1>
-                  Emma&nbsp;Earl
-                  <div class="small-text">Photography</div>
-               </h1>
-            </div>
-            <nav id="js-nav-main" class="nav-main">
-               <ul>
-                  <li><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="./journal.html" class="nav-link">My Work</a></li>
-                  <li><a href="./reviews.html" class="nav-link">Reviews</a></li>
-                  <li><a href="./about.html" class="nav-link">About Me</a></li>
-                  <li><a href="./contact.html" class="nav-link">Contact</a></li>
-               </ul>
-            </nav>
-            <div id="js-hamburger" class="hamburger">
-               <i class="las la-bars"></i>
-            </div>
-         </div>
-      </header>
-
-      <!-- Auto slideshow -->
-      <div id="js-showcase" class="showcase"></div>
-   </div>
-
-   <main>
-      <!-- INTRODUCTION -->
-      <section class="introduction section-fade-in">
-         <p>I want to capture</p>
-         <div class="text-xl">The little things and the big feelings</div>
-         <p>The stuff that matters very most to you and your person.<br>
-            Nothing Forced. Nothing set up.
-            Just you two, the way you are.</p>
-      </section>
-
-      <!-- FEATURED GALLERY -->
-      <section class="featured-gallery section-fade-in">
-         <div class="container">
-            <div class="gallery1">
-               <h4>PORTFOLIO HIGHLIGHT</h4>
-               <h3>Annie & Rob | Dreamy Fall Sedona</h3>
-            </div>
-            <div class="gallery2">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_1_ghd1qe.jpg"
-                  srcset="
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_1_ghd1qe.jpg 1000w,
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1476/emma-earl/homepage/portfolio-highlight_1_ghd1qe.jpg 1476w,"
-                  sizes="(min-width: 801px) 35vw" alt="Bride sitting on a chair, reading a letter from the groom">
-            </div>
-            <div class="gallery3">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_2_eka43u.jpg"
-                  srcset="
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/homepage/portfolio-highlight_2_eka43u.jpg 500w,
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_2_eka43u.jpg 1000w,
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1475/emma-earl/homepage/portfolio-highlight_2_eka43u.jpg 1475w,"
-                  sizes="(max-width: 800px) 90vw, 50vw" alt="Bride and groom sweetly looking at each other">
-            </div>
-            <div class="gallery4">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_3_njfjcf.jpg"
-                  srcset="
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_3_njfjcf.jpg 1000w,
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1474/emma-earl/homepage/portfolio-highlight_3_njfjcf.jpg 1474w,"
-                  sizes="(min-width: 801px) 50vw" alt="Bride and groom enjoying playing game">
-            </div>
-            <div class="gallery5">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_4_k9ri6h.jpg"
-                  srcset="
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_4_k9ri6h.jpg 1000w,
-                  https://res.cloudinary.com/dg4arvkpw/image/upload/w_1473/emma-earl/homepage/portfolio-highlight_4_k9ri6h.jpg 1473w,"
-                  sizes="(min-width: 801px) 35vw" alt="A bouquet of flower on the ground, alongside a letter">
-            </div>
-            <div class="gallery6">
-               <div class="text-xl">132</div>
-               <div class="text-l">PHOTOS</div>
-               <a href="./journal-pages/annie-rob.html" class="btn">View Gallery</a>
-            </div>
-         </div>
-      </section>
-
-      <!-- FEATURED REVIEWS -->
-      <section class="featured-reviews section-fade-in">
-         <div class="container">
-            <h2>What They're Saying</h2>
-            <div class="reviews-wrapper">
-               <div class="review active">
-                  <h4>MONICA + CHANDLER</h4>
-                  <p>
-                     Not only did Emma’s work convince me to hire her as our wedding photographer, but her personality
-                     and work ethic was icing on the cake. She was very communicative/responsive with me, even though, I
-                     was planning a wedding 3,000 miles away and with a 3 hour difference. <br>
-                     Our photos are gorgeous and dreamy! My husband was not a big fan of
-                     being in front of the camera, and she made sure to make us feel comfortable and at ease. He loves
-                     MANY
-                     of the photos that Emma took of us and that’s not an easy task. Thank you, Emma! Can’t wait to
-                     recommend you always!
-                  </p>
+   <body>
+      <!-- NAVIGATION & SHOWCASE -->
+      <div class="header-showcase">
+         <header class="main-head">
+            <div class="container">
+               <div class="logo">
+                  <h1>
+                     Emma&nbsp;Earl
+                     <div class="small-text">Photography</div>
+                  </h1>
                </div>
-               <div class="review">
-                  <h4>RACHEL + ROSS</h4>
-                  <p>
-                     I cannot say enough good things about working with Emma! We flew Emma out to Hawaii for our
-                     wedding, and despite being completely new to the island, she did an amazing job capturing our day!
-                     She
-                     went above and beyond to make sure she found the best locations to do our “first look” and sunset
-                     shots, and we were absolutely blown away by the final photos. Also from a very practical
-                     standpoint,
-                     she had our photos edited and sent to us in less than a month from our wedding day, which was the
-                     cherry on top.
-                  </p>
-               </div>
-               <div class="review">
-                  <h4>JAMIE + DAVID</h4>
-                  <p>
-                     Even though we knew the photos would be amazing, we didn’t think they could top the EXPERIENCE of
-                     shooting with Emma. We both felt so ourselves and so celebrated. We were excited for the shoot, of
-                     course, but never could have expected the experience or how meaningful these images are to us. <br>
-                     We literally can’t thank her enough for the care and love she poured into these and into us. It is
-                     so
-                     special to feel so seen and warm and love our bodies in photos. Shooting with Emma was so special
-                     for
-                     us. Thank you....
-                  </p>
+               <nav id="js-nav-main" class="nav-main">
+                  <ul>
+                     <li><a href="index.html" class="nav-link">Home</a></li>
+                     <li>
+                        <a href="./journal.html" class="nav-link">My Work</a>
+                     </li>
+                     <li>
+                        <a href="./reviews.html" class="nav-link">Reviews</a>
+                     </li>
+                     <li>
+                        <a href="./about.html" class="nav-link">About Me</a>
+                     </li>
+                     <li>
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div id="js-hamburger" class="hamburger">
+                  <i class="las la-bars"></i>
                </div>
             </div>
-            <div class="review-nav">
-               <button id="js-prev-review">
-                  <i class="las la-long-arrow-alt-left"></i>
-               </button>
+         </header>
 
-               <p id="js-current-review"></p>
-
-               <button id="js-next-review">
-                  <i class="las la-long-arrow-alt-right"></i>
-               </button>
-            </div>
-         </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="about section-fade-in">
-         <div class="container">
-            <div class="about-text">
-               <h4>
-                  TRAVELING PHOTOGRAPHER <br>
-                  BASED IN UTAH
-               </h4>
-               <h2>
-                  The One Behind <br>
-                  The Camera
-               </h2>
-               <p>
-                  I am absolutely giddy that you stumbled upon my work! Capturing raw emotions as they happen is what
-                  I’m
-                  all about. I love my people, the earth underneath my feet, the animals I get to spoil, and creating
-                  meaningful images for those I love. Let’s get to know each other, I’ll go first.
-               </p>
-               <a href="./about.html" class="btn">Get to know me</a>
-            </div>
-            <div class="about-img">
-               <img src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1500/emma-earl/homepage/about_ar1meg.jpg"
-                  srcset="
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/homepage/about_ar1meg.jpg 500w,
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/about_ar1meg.jpg 1000w,
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1500/emma-earl/homepage/about_ar1meg.jpg 1500w,"
-                  sizes="(max-width: 800px) 90vw, 45vw">
-            </div>
-         </div>
-      </section>
-   </main>
-
-   <!-- FOOTER -->
-   <footer class="section-fade-in">
-      <div class="footer-upper">
-         <div class="container">
-            <div class="upper-left">
-               <div class="title">LATEST ON INSTAGRAM</div>
-               <div id="js-footer-img" class="img-wrapper"></div>
-            </div>
-            <div class="upper-right">
-               <h3>Let’s capture what makes your <br>
-                  heart beat hardest, together.</h3>
-               <p>THIS IS WHERE THE MAGIC HAPPENS. IT’S WHERE YOU BASICALLY ASK ME OUT ON A DATE AS YOUR THIRD WHEEL AND
-                  I
-                  SAY YES, AND WE BECOME BFF’S.</p>
-               <a href="./contact.html" class="btn">Inquire Now</a>
-            </div>
-         </div>
+         <!-- Auto slideshow -->
+         <div id="js-showcase" class="showcase"></div>
       </div>
 
-      <div class="footer-lower">
-         <div class="container">
-            <div class="copyright">
-               <h4>Copyright &copy; 2020</h4>
-               <span>Emma Earl Photography</span>
+      <main>
+         <!-- INTRODUCTION -->
+         <section class="introduction section-fade-in">
+            <p>I want to capture</p>
+            <div class="text-xl">The little things and the big feelings</div>
+            <p>
+               The stuff that matters very most to you and your person.<br />
+               Nothing Forced. Nothing set up. Just you two, the way you are.
+            </p>
+         </section>
+
+         <!-- FEATURED GALLERY -->
+         <section class="featured-gallery section-fade-in">
+            <div class="container">
+               <div class="gallery1">
+                  <h4>PORTFOLIO HIGHLIGHT</h4>
+                  <h3>Annie & Rob | Dreamy Fall Sedona</h3>
+               </div>
+               <div class="gallery2">
+                  <img
+                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_1_ghd1qe.jpg"
+                     srcset="
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_1_ghd1qe.jpg 1000w,
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1476/emma-earl/homepage/portfolio-highlight_1_ghd1qe.jpg 1476w
+                     "
+                     sizes="(min-width: 801px) 35vw"
+                     alt="Bride sitting on a chair, reading a letter from the groom"
+                  />
+               </div>
+               <div class="gallery3">
+                  <img
+                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_2_eka43u.jpg"
+                     srcset="
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/homepage/portfolio-highlight_2_eka43u.jpg   500w,
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_2_eka43u.jpg 1000w,
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1475/emma-earl/homepage/portfolio-highlight_2_eka43u.jpg 1475w
+                     "
+                     sizes="(max-width: 800px) 90vw, 50vw"
+                     alt="Bride and groom sweetly looking at each other"
+                  />
+               </div>
+               <div class="gallery4">
+                  <img
+                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_3_njfjcf.jpg"
+                     srcset="
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_3_njfjcf.jpg 1000w,
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1474/emma-earl/homepage/portfolio-highlight_3_njfjcf.jpg 1474w
+                     "
+                     sizes="(min-width: 801px) 50vw"
+                     alt="Bride and groom enjoying playing game"
+                  />
+               </div>
+               <div class="gallery5">
+                  <img
+                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_4_k9ri6h.jpg"
+                     srcset="
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/portfolio-highlight_4_k9ri6h.jpg 1000w,
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1473/emma-earl/homepage/portfolio-highlight_4_k9ri6h.jpg 1473w
+                     "
+                     sizes="(min-width: 801px) 35vw"
+                     alt="A bouquet of flower on the ground, alongside a letter"
+                  />
+               </div>
+               <div class="gallery6">
+                  <div class="text-xl">132</div>
+                  <div class="text-l">PHOTOS</div>
+                  <a href="./journal-pages/annie-rob.html" class="btn"
+                     >View Gallery</a
+                  >
+               </div>
             </div>
-            <nav class="nav-footer">
-               <ul>
-                  <li><a href="index.html">HOME</a></li>
-                  <li><a href="./journal.html">MY WORK</a></li>
-                  <li><a href="./reviews.html">REVIEWS</a></li>
-                  <li><a href="./about.html">ABOUT ME</a></li>
-                  <li><a href="./contact.html">CONTACT</a></li>
-               </ul>
-            </nav>
+         </section>
+
+         <!-- FEATURED REVIEWS -->
+         <section class="featured-reviews section-fade-in">
+            <div class="container">
+               <h2>What They're Saying</h2>
+               <div class="reviews-wrapper">
+                  <div class="review active">
+                     <h4>MONICA + CHANDLER</h4>
+                     <p>
+                        Not only did Emma’s work convince me to hire her as our
+                        wedding photographer, but her personality and work ethic
+                        was icing on the cake. She was very
+                        communicative/responsive with me, even though, I was
+                        planning a wedding 3,000 miles away and with a 3 hour
+                        difference. <br />
+                        Our photos are gorgeous and dreamy! My husband was not a
+                        big fan of being in front of the camera, and she made
+                        sure to make us feel comfortable and at ease. He loves
+                        MANY of the photos that Emma took of us and that’s not
+                        an easy task. Thank you, Emma! Can’t wait to recommend
+                        you always!
+                     </p>
+                  </div>
+                  <div class="review">
+                     <h4>RACHEL + ROSS</h4>
+                     <p>
+                        I cannot say enough good things about working with Emma!
+                        We flew Emma out to Hawaii for our wedding, and despite
+                        being completely new to the island, she did an amazing
+                        job capturing our day! She went above and beyond to make
+                        sure she found the best locations to do our “first look”
+                        and sunset shots, and we were absolutely blown away by
+                        the final photos. Also from a very practical standpoint,
+                        she had our photos edited and sent to us in less than a
+                        month from our wedding day, which was the cherry on top.
+                     </p>
+                  </div>
+                  <div class="review">
+                     <h4>JAMIE + DAVID</h4>
+                     <p>
+                        Even though we knew the photos would be amazing, we
+                        didn’t think they could top the EXPERIENCE of shooting
+                        with Emma. We both felt so ourselves and so celebrated.
+                        We were excited for the shoot, of course, but never
+                        could have expected the experience or how meaningful
+                        these images are to us. <br />
+                        We literally can’t thank her enough for the care and
+                        love she poured into these and into us. It is so special
+                        to feel so seen and warm and love our bodies in photos.
+                        Shooting with Emma was so special for us. Thank you....
+                     </p>
+                  </div>
+               </div>
+               <div class="review-nav">
+                  <button id="js-prev-review">
+                     <i class="las la-long-arrow-alt-left"></i>
+                  </button>
+
+                  <p id="js-current-review"></p>
+
+                  <button id="js-next-review">
+                     <i class="las la-long-arrow-alt-right"></i>
+                  </button>
+               </div>
+            </div>
+         </section>
+
+         <!-- ABOUT -->
+         <section id="about" class="about section-fade-in">
+            <div class="container">
+               <div class="about-text">
+                  <h4>
+                     TRAVELING PHOTOGRAPHER <br />
+                     BASED IN UTAH
+                  </h4>
+                  <h2>
+                     The One Behind <br />
+                     The Camera
+                  </h2>
+                  <p>
+                     I am absolutely giddy that you stumbled upon my work!
+                     Capturing raw emotions as they happen is what I’m all
+                     about. I love my people, the earth underneath my feet, the
+                     animals I get to spoil, and creating meaningful images for
+                     those I love. Let’s get to know each other, I’ll go first.
+                  </p>
+                  <a href="./about.html" class="btn">Get to know me</a>
+               </div>
+               <div class="about-img">
+                  <img
+                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/w_1500/emma-earl/homepage/about_ar1meg.jpg"
+                     srcset="
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/homepage/about_ar1meg.jpg   500w,
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1000/emma-earl/homepage/about_ar1meg.jpg 1000w,
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1500/emma-earl/homepage/about_ar1meg.jpg 1500w
+                     "
+                     sizes="(max-width: 800px) 90vw, 45vw"
+                  />
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="section-fade-in">
+         <div class="footer-upper">
+            <div class="container">
+               <div class="upper-left">
+                  <div class="title">LATEST ON INSTAGRAM</div>
+                  <div id="js-footer-img" class="img-wrapper"></div>
+               </div>
+               <div class="upper-right">
+                  <h3>
+                     Let’s capture what makes your <br />
+                     heart beat hardest, together.
+                  </h3>
+                  <p>
+                     THIS IS WHERE THE MAGIC HAPPENS. IT’S WHERE YOU BASICALLY
+                     ASK ME OUT ON A DATE AS YOUR THIRD WHEEL AND I SAY YES, AND
+                     WE BECOME BFF’S.
+                  </p>
+                  <a href="./contact.html" class="btn">Inquire Now</a>
+               </div>
+            </div>
          </div>
-      </div>
-   </footer>
 
-   <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-         apiKey: "AIzaSyBuce6dKf82np_4dDheBeHaRXfiM8dFhAc",
-         authDomain: "emma-earl.firebaseapp.com",
-         projectId: "emma-earl",
-         storageBucket: "emma-earl.appspot.com",
-         messagingSenderId: "840315310107",
-         appId: "1:840315310107:web:18491a5c227bdd7720a8be"
-      }
+         <div class="footer-lower">
+            <div class="container">
+               <div class="copyright">
+                  <h4>Copyright &copy; 2020</h4>
+                  <span>Emma Earl Photography</span>
+               </div>
+               <nav class="nav-footer">
+                  <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="./journal.html">MY WORK</a></li>
+                     <li><a href="./reviews.html">REVIEWS</a></li>
+                     <li><a href="./about.html">ABOUT ME</a></li>
+                     <li><a href="./contact.html">CONTACT</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </footer>
 
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig)
-      const db = firebase.firestore()
-   </script>
+      <script>
+         // Your web app's Firebase configuration
+         var firebaseConfig = {
+            apiKey: "AIzaSyBuce6dKf82np_4dDheBeHaRXfiM8dFhAc",
+            authDomain: "emma-earl.firebaseapp.com",
+            projectId: "emma-earl",
+            storageBucket: "emma-earl.appspot.com",
+            messagingSenderId: "840315310107",
+            appId: "1:840315310107:web:18491a5c227bdd7720a8be",
+         }
 
-   <script src="./js/general.js"></script>
-   <script src="./js/homepage.js"></script>
-</body>
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig)
+         const db = firebase.firestore()
+      </script>
 
+      <script src="./js/general.js"></script>
+      <script src="./js/homepage.js"></script>
+   </body>
 </html>

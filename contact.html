@@ -1,141 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;375;400&family=Overpass:wght@300;400&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="icon" type="image/png" href="./img/favicon.png" />
+      <link
+         rel="stylesheet"
+         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+      />
+      <link rel="stylesheet" href="./css/general.css" />
+      <link rel="stylesheet" href="./css/contact.css" />
+      <title>Emma Earl | Contact</title>
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;375;400&family=Overpass:wght@300;400&display=swap"
-      rel="stylesheet">
-   <link rel="icon" type="image/png" href="./img/favicon.png">
-   <link rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-   <link rel="stylesheet" href="./css/general.css">
-   <link rel="stylesheet" href="./css/contact.css">
-   <title>Emma Earl | Contact</title>
-</head>
-
-<body>
-   <!-- NAVIGATION -->
-   <header class="main-head">
-      <div class="container">
-         <div class="logo">
-            <h1>
-               Emma&nbsp;Earl
-               <div class="small-text">Photography</div>
-            </h1>
-         </div>
-         <nav id="js-nav-main" class="nav-main">
-            <ul>
-               <li><a href="index.html" class="nav-link">Home</a></li>
-               <li><a href="./journal.html" class="nav-link">My Work</a></li>
-               <li><a href="./reviews.html" class="nav-link">Reviews</a></li>
-               <li><a href="./about.html" class="nav-link">About Me</a></li>
-               <li><a href="./contact.html" class="nav-link">Contact</a></li>
-            </ul>
-         </nav>
-         <div id="js-hamburger" class="hamburger">
-            <i class="las la-bars"></i>
-         </div>
-      </div>
-   </header>
-
-   <main>
-      <!-- CONTACT LEAD -->
-      <section class="contact-lead section-fade-in">
+   <body>
+      <!-- NAVIGATION -->
+      <header class="main-head">
          <div class="container">
-            <header class="contact-lead-title">
-               <h2>GET IN TOUCH</h2>
-               <p>
-                  This is where the magic happens. It’s where you basically ask me out on a date as a third wheel, and
-                  we become real good friends.
-               </p>
-            </header>
-            <div class="lead-img-wrapper">
-               <img
-                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/v1602684840/emma-earl/contact/contact-lead_wumruz.jpg"
-                  srcset="
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/contact/contact-lead_wumruz.jpg 500w,
-                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1098/emma-earl/contact/contact-lead_wumruz.jpg 1098w,"
-                  sizes="(max-width: 800px) 90vw, 50vw">
+            <div class="logo">
+               <h1>
+                  Emma&nbsp;Earl
+                  <div class="small-text">Photography</div>
+               </h1>
+            </div>
+            <nav id="js-nav-main" class="nav-main">
+               <ul>
+                  <li><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="./journal.html" class="nav-link">My Work</a></li>
+                  <li><a href="./reviews.html" class="nav-link">Reviews</a></li>
+                  <li><a href="./about.html" class="nav-link">About Me</a></li>
+                  <li><a href="./contact.html" class="nav-link">Contact</a></li>
+               </ul>
+            </nav>
+            <div id="js-hamburger" class="hamburger">
+               <i class="las la-bars"></i>
             </div>
          </div>
-      </section>
+      </header>
 
-      <!-- CONTACT -->
-      <section class="contact section-fade-in">
-         <form class="form" name="emma-earl" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-            <div class="form-input">
-               <input type="text" name="user-name" placeholder="Your Name*" required>
-               <input type="text" name="partner-name" placeholder="Your Partner's Name">
-            </div>
-            <div class="form-input">
-               <input type="email" name="email" placeholder="Your Email*" required>
-               <input type="number" name="phone" placeholder="Phone*" required>
-            </div>
-            <div class="form-input">
-               <input type="text" name="date" placeholder="Date*" required>
-               <input type="text" name="location" placeholder="Location*" required>
-            </div>
-            <div class="form-select">
-               <label>
-                  <div>We want you for...</div>
-                  <select name="requirement">
-                     <option hidden disabled selected value> -- Select an option -- </option>
-                     <option value="Wedding">Wedding</option>
-                     <option value="Elopement">Elopement</option>
-                     <option value="Other">Other</option>
-                  </select>
-               </label>
-               <label>
-                  <div>How did you hear about me ?</div>
-                  <select name="where-you-find-me">
-                     <option hidden disabled selected value> -- Select an option -- </option>
-                     <option value="Client Referral">Client Referral</option>
-                     <option value="Google">Google</option>
-                     <option value="Facebook">Facebook</option>
-                     <option value="Instagram">Instagram</option>
-                     <option value="Wedding Blog">Wedding Blog</option>
-                     <option value="Pinterest">Pinterest</option>
-                     <option value="Other">Other</option>
-                  </select>
-               </label>
-            </div>
-            <div class="form-radio">
-               <div class="coverage-question">Are you interested in wedding weekend coverage ?</div>
-               <div class="coverage-options">
-                  <label>
-                     <input type="radio" name="weekend-coverage" value="Yes">
-                     <span>Absolutely!</span>
-                  </label>
-                  <label>
-                     <input type="radio" name="weekend-coverage" value="Not Sure">
-                     <span>Still deciding</span>
-                  </label>
-                  <label>
-                     <input type="radio" name="weekend-coverage" value="No">
-                     <span>Nah we good!</span>
-                  </label>
+      <main>
+         <!-- CONTACT LEAD -->
+         <section class="contact-lead section-fade-in">
+            <div class="container">
+               <header class="contact-lead-title">
+                  <h2>GET IN TOUCH</h2>
+                  <p>
+                     This is where the magic happens. It’s where you basically
+                     ask me out on a date as a third wheel, and we become real
+                     good friends.
+                  </p>
+               </header>
+               <div class="lead-img-wrapper">
+                  <img
+                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/v1602684840/emma-earl/contact/contact-lead_wumruz.jpg"
+                     srcset="
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/contact/contact-lead_wumruz.jpg   500w,
+                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1098/emma-earl/contact/contact-lead_wumruz.jpg 1098w
+                     "
+                     sizes="(max-width: 800px) 90vw, 50vw"
+                  />
                </div>
             </div>
-            <div class="form-textarea">
-               <div>Tell me about you two! Give me details.</div>
-               <textarea name="about-user" rows="8" placeholder="Hobbies? Favourive shows? Food? How you met?">
+         </section>
+
+         <!-- CONTACT -->
+         <section class="contact section-fade-in">
+            <form
+               class="form"
+               name="emma-earl"
+               method="POST"
+               netlify-honeypot="bot-field"
+               data-netlify="true"
+            >
+               <div class="form-input">
+                  <input
+                     type="text"
+                     name="user-name"
+                     placeholder="Your Name*"
+                     required
+                  />
+                  <input
+                     type="text"
+                     name="partner-name"
+                     placeholder="Your Partner's Name"
+                  />
+               </div>
+               <div class="form-input">
+                  <input
+                     type="email"
+                     name="email"
+                     placeholder="Your Email*"
+                     required
+                  />
+                  <input
+                     type="number"
+                     name="phone"
+                     placeholder="Phone*"
+                     required
+                  />
+               </div>
+               <div class="form-input">
+                  <input type="text" name="date" placeholder="Date*" required />
+                  <input
+                     type="text"
+                     name="location"
+                     placeholder="Location*"
+                     required
+                  />
+               </div>
+               <div class="form-select">
+                  <label>
+                     <div>We want you for...</div>
+                     <select name="requirement">
+                        <option hidden disabled selected value>
+                           -- Select an option --
+                        </option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Elopement">Elopement</option>
+                        <option value="Other">Other</option>
+                     </select>
+                  </label>
+                  <label>
+                     <div>How did you hear about me ?</div>
+                     <select name="where-you-find-me">
+                        <option hidden disabled selected value>
+                           -- Select an option --
+                        </option>
+                        <option value="Client Referral">Client Referral</option>
+                        <option value="Google">Google</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Wedding Blog">Wedding Blog</option>
+                        <option value="Pinterest">Pinterest</option>
+                        <option value="Other">Other</option>
+                     </select>
+                  </label>
+               </div>
+               <div class="form-radio">
+                  <div class="coverage-question">
+                     Are you interested in wedding weekend coverage ?
+                  </div>
+                  <div class="coverage-options">
+                     <label>
+                        <input
+                           type="radio"
+                           name="weekend-coverage"
+                           value="Yes"
+                        />
+                        <span>Absolutely!</span>
+                     </label>
+                     <label>
+                        <input
+                           type="radio"
+                           name="weekend-coverage"
+                           value="Not Sure"
+                        />
+                        <span>Still deciding</span>
+                     </label>
+                     <label>
+                        <input
+                           type="radio"
+                           name="weekend-coverage"
+                           value="No"
+                        />
+                        <span>Nah we good!</span>
+                     </label>
+                  </div>
+               </div>
+               <div class="form-textarea">
+                  <div>Tell me about you two! Give me details.</div>
+                  <textarea
+                     name="about-user"
+                     rows="8"
+                     placeholder="Hobbies? Favourive shows? Food? How you met?"
+                  >
                   </textarea>
-            </div>
-            <div class="form-textarea">
-               <div>Any questions for me ?</div>
-               <textarea name="user-questions" rows="8" placeholder="Fire away!"></textarea>
-            </div>
-            <div class="form-submit">
-               <button type="submit" class="btn">Submit</button>
-            </div>
-         </form>
-      </section>
-   </main>
+               </div>
+               <div class="form-textarea">
+                  <div>Any questions for me ?</div>
+                  <textarea
+                     name="user-questions"
+                     rows="8"
+                     placeholder="Fire away!"
+                  ></textarea>
+               </div>
+               <div class="form-submit">
+                  <button type="submit" class="btn">Submit</button>
+               </div>
+            </form>
+         </section>
+      </main>
 
-   <script src="./js/general.js"></script>
-</body>
-
+      <script src="./js/general.js"></script>
+   </body>
 </html>
