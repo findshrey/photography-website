@@ -1,4 +1,7 @@
-/* ----- BASE SETTINGS ----- */
+/* ------------------------------ */
+/* GLOBAL STYLES */
+/* ------------------------------ */
+
 *,
 *::before,
 *::after {
@@ -15,25 +18,25 @@
 html {
    font-size: 62.5%;
    scroll-behavior: smooth;
-   /* Fonts */
-   --font-heading: "Josefin Sans", sans-serif;
-   --font-body: "Overpass", sans-serif;
-   /* Header sizes */
-   --h1: clamp(3rem, calc(2rem + 1.5vw), 4.5rem);
-   --h2: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
-   --h3: clamp(2.5rem, calc(1.3rem + 1.25vw), 3.5rem);
-   --h4: clamp(1.3rem, calc(0.8rem + 0.5vw), 2rem);
-   /* Text sizes */
-   --font-xl: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
-   --font-l: clamp(2.5rem, calc(1.3rem + 1.25vw), 3.5rem);
-   --font-m: clamp(1.5rem, calc(1rem + 0.5vw), 2rem);
-   --font-s: clamp(1.3rem, calc(0.8rem + 0.5vw), 1.8rem);
+
+   /* Font Family */
+   --ff-heading: "Josefin Sans", sans-serif;
+   --ff-body: "Overpass", sans-serif;
+
+   /* Font sizes */
+   --fs-700: clamp(3rem, calc(2rem + 1.5vw), 4.5rem);
+   --fs-600: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
+   --fs-500: clamp(2.5rem, calc(1.3rem + 1.25vw), 3.5rem);
+   --fs-400: clamp(1.5rem, calc(1rem + 0.5vw), 2rem);
+   --fs-300: clamp(1.3rem, calc(0.8rem + 0.5vw), 1.9rem);
    /* Colors */
+
    --c-black-dark: #0d0d0d;
    --c-black-matte: #333;
    --c-mustard: #ff971d;
    --c-white: #fff;
    --c-white-ghost: #f4f2f1;
+
    /* Paddings & Margins */
    --padding-section: calc(5rem + 3vw) 0;
    --page-head-margin: calc(5rem + 2vw);
@@ -42,29 +45,29 @@ html {
 body {
    background: var(--c-white);
    color: var(--c-black-matte);
-   font-family: var(--font-body);
+   font-family: var(--ff-body);
    line-height: 1.5;
 }
 
 h1 {
-   font-family: var(--font-heading);
-   font-size: var(--h1);
+   font-family: var(--ff-heading);
+   font-size: var(--fs-700);
    font-weight: 300;
    letter-spacing: calc(1px + 0.25vw);
 }
 h2 {
-   font-family: var(--font-heading);
-   font-size: var(--h2);
+   font-family: var(--ff-heading);
+   font-size: var(--fs-600);
    font-weight: 375;
 }
 h3 {
-   font-family: var(--font-heading);
-   font-size: var(--h3);
+   font-family: var(--ff-heading);
+   font-size: var(--fs-500);
    font-weight: 375;
 }
 h4 {
-   font-family: var(--font-heading);
-   font-size: var(--h4);
+   font-family: var(--ff-heading);
+   font-size: var(--fs-300);
    font-weight: 400;
 }
 
@@ -78,7 +81,7 @@ label,
 input,
 textarea,
 select {
-   font-size: var(--font-m);
+   font-size: var(--fs-400);
 }
 
 ul {
@@ -94,12 +97,15 @@ button {
    font-family: inherit;
 }
 
-/* ----- UTILITY CLASSES ----- */
+/* ------------------------------ */
+/* UTILITY CLASSES */
+/* ------------------------------ */
+
 .text-xl {
-   font-size: var(--font-xl);
+   font-size: var(--fs-600);
 }
 .text-l {
-   font-size: var(--font-l);
+   font-size: var(--fs-500);
 }
 
 .container {
@@ -145,7 +151,7 @@ button {
 }
 
 .nav-link {
-   font-size: var(--font-s);
+   font-size: var(--fs-300);
    letter-spacing: 1px;
 }
 
@@ -197,13 +203,13 @@ button {
 }
 
 .upper-right p {
-   font-size: var(--font-s);
+   font-size: var(--fs-300);
    line-height: 1.8;
    margin: calc(1.8rem + 0.75vw) 0;
 }
 
 .upper-right a {
-   font-size: var(--font-s);
+   font-size: var(--fs-300);
 }
 
 .footer-lower {
@@ -221,7 +227,7 @@ button {
 }
 
 .nav-footer a {
-   font-size: var(--font-s);
+   font-size: var(--fs-300);
    margin-left: calc(1rem + 1vw);
 }
 
@@ -356,13 +362,13 @@ button {
 @media (max-width: 500px) {
    html {
       /* Header Sizes */
-      --h1: 3rem;
-      --h2: 3rem;
-      --h3: 2rem;
-      --h4: 1.2rem;
+      --fs-700: 3rem;
+      --fs-600: 3rem;
+      --fs-500: 2rem;
+      --fs-300: 1.2rem;
       /* Text Sizes */
-      --font-m: 1.3rem;
-      --font-s: 1.1rem;
+      --fs-400: 1.3rem;
+      --fs-300: 1.1rem;
    }
 
    h1 {
@@ -373,6 +379,6 @@ button {
 @media (max-width: 350px) {
    /* Header Sizes */
    html {
-      --h1: 2.5rem;
+      --fs-700: 2.5rem;
    }
 }

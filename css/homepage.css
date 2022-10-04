@@ -69,13 +69,13 @@
 
 .introduction .text-xl {
    color: var(--c-mustard);
-   font-family: var(--font-heading);
+   font-family: var(--ff-heading);
    font-weight: 350;
    margin: 4rem 0;
 }
 
 .introduction p {
-   font-size: var(--font-s);
+   font-size: var(--fs-300);
    font-weight: 700;
    letter-spacing: 2px;
    line-height: 2.2;
@@ -190,7 +190,7 @@
 }
 
 .review h4 {
-   font-size: var(--font-m);
+   font-size: var(--fs-400);
    margin-bottom: 1.5rem;
 }
 
@@ -209,7 +209,7 @@
    background: transparent;
    border: none;
    cursor: pointer;
-   font-size: calc(var(--h4) + 1rem);
+   font-size: calc(var(--fs-300) + 1rem);
 }
 
 .review-nav button:focus {
@@ -218,7 +218,7 @@
 
 .review-nav p {
    margin: 0 2rem;
-   font-size: calc(var(--h4) + 0.2rem);
+   font-size: calc(var(--fs-300) + 0.2rem);
 }
 
 /* ABOUT */

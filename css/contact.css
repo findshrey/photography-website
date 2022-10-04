@@ -119,7 +119,7 @@ select:focus {
 }
 
 .form-radio .coverage-question {
-   font-size: var(--font-m);
+   font-size: var(--fs-400);
    letter-spacing: 2px;
    margin-bottom: 1.5rem;
 }
