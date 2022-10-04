@@ -26,11 +26,12 @@
 
 .about-lead-title h2 {
    color: var(--c-mustard);
+   font-size: var(--fs-600);
    letter-spacing: calc(2px + 0.3vw);
    margin-bottom: 1rem;
 }
 
-.about-lead-title h4 {
+.about-lead-title span {
    font-size: var(--fs-400);
    letter-spacing: 2px;
    line-height: 1.8;
@@ -61,6 +62,7 @@
 }
 
 .achievements h3 {
+   font-size: var(--fs-500);
    margin-bottom: calc(2rem + 0.75vw);
 }
 

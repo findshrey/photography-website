@@ -12,6 +12,10 @@
    margin-bottom: calc(4rem + 1.5vw);
 }
 
+.journal-page h2 {
+   font-size: var(--fs-500);
+}
+
 .journal-page .images-container {
    min-height: 100vh;
 }

@@ -25,6 +25,7 @@
 
 .contact-lead-title h2 {
    color: var(--c-mustard);
+   font-size: var(--fs-600);
    letter-spacing: calc(1px + 0.1vw);
    margin-bottom: 1rem;
 }

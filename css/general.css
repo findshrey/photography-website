@@ -74,25 +74,11 @@ button:focus {
    outline: none;
 }
 
-h1 {
-   font-family: var(--ff-heading);
-   font-size: var(--fs-700);
-   font-weight: 300;
-   letter-spacing: calc(1px + 0.25vw);
-}
-h2 {
-   font-family: var(--ff-heading);
-   font-size: var(--fs-600);
-   font-weight: 375;
-}
-h3 {
-   font-family: var(--ff-heading);
-   font-size: var(--fs-500);
-   font-weight: 375;
-}
+h1,
+h2,
+h3,
 h4 {
    font-family: var(--ff-heading);
-   font-size: var(--fs-300);
    font-weight: 400;
 }
 
@@ -139,7 +125,14 @@ h4 {
    margin-bottom: 4rem;
 }
 
+.main-head .logo h1 {
+   font-size: var(--fs-700);
+   font-weight: 300;
+   letter-spacing: calc(1px + 0.25vw);
+}
+
 .logo .small-text {
+   font-size: var(--fs-400);
    font-weight: 350;
    letter-spacing: calc(1px + 0.1vw);
 }
@@ -201,6 +194,10 @@ h4 {
    margin-left: 5rem;
 }
 
+.upper-right h2 {
+   font-size: var(--fs-500);
+}
+
 .upper-right p {
    font-size: var(--fs-300);
    line-height: 1.8;
@@ -232,6 +229,10 @@ h4 {
 
 .nav-footer li:first-child a {
    margin-left: 0;
+}
+
+.copyright div {
+   font-size: var(--fs-300);
 }
 
 /* Animation: Section fade in */
