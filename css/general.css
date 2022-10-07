@@ -1,4 +1,31 @@
 /* ------------------------------ */
+/* CONFIG */
+/* ------------------------------ */
+
+:root {
+   /* Font Family */
+   --ff-body: "Overpass", sans-serif;
+
+   /* Font sizes */
+   --fs-700: clamp(3rem, calc(2rem + 1.5vw), 4.5rem);
+   --fs-600: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
+   --fs-500: clamp(2.5rem, calc(1.3rem + 1.25vw), 3.5rem);
+   --fs-400: clamp(1.5rem, calc(1rem + 0.5vw), 2rem);
+   --fs-300: clamp(1.3rem, calc(0.8rem + 0.5vw), 1.9rem);
+
+   /* Colors */
+   --c-black-dark: #0d0d0d;
+   --c-black-matte: #333;
+   --c-mustard: #ff971d;
+   --c-white: #fff;
+   --c-white-ghost: #f4f2f1;
+
+   /* Paddings & Margins */
+   --padding-section: calc(5rem + 3vw) 0;
+   --page-head-margin: calc(5rem + 2vw);
+}
+
+/* ------------------------------ */
 /* GLOBAL STYLES */
 /* ------------------------------ */
 
@@ -9,36 +36,15 @@
    margin: 0;
    padding: 0;
 
-   text-rendering: optimizeLegibility;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
    font-kerning: auto;
+   text-rendering: optimizeLegibility;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
 }
 
 html {
    font-size: 62.5%;
    scroll-behavior: smooth;
-
-   /* Font Family */
-   --ff-body: "Overpass", sans-serif;
-
-   /* Font sizes */
-   --fs-700: clamp(3rem, calc(2rem + 1.5vw), 4.5rem);
-   --fs-600: clamp(3.5rem, calc(2.5rem + 1.5vw), 5rem);
-   --fs-500: clamp(2.5rem, calc(1.3rem + 1.25vw), 3.5rem);
-   --fs-400: clamp(1.5rem, calc(1rem + 0.5vw), 2rem);
-   --fs-300: clamp(1.3rem, calc(0.8rem + 0.5vw), 1.9rem);
-   /* Colors */
-
-   --c-black-dark: #0d0d0d;
-   --c-black-matte: #333;
-   --c-mustard: #ff971d;
-   --c-white: #fff;
-   --c-white-ghost: #f4f2f1;
-
-   /* Paddings & Margins */
-   --padding-section: calc(5rem + 3vw) 0;
-   --page-head-margin: calc(5rem + 2vw);
 }
 
 body {
@@ -102,6 +108,10 @@ h4 {
 .btn:focus {
    outline: none;
 }
+
+/* ------------------------------ */
+/* COMMON STYLES */
+/* ------------------------------ */
 
 /* NAVIGATION */
 .main-head {
@@ -347,29 +357,5 @@ h4 {
 
    .footer-lower .nav-footer {
       margin-bottom: 3rem;
-   }
-}
-
-@media (max-width: 500px) {
-   html {
-      /* Header Sizes */
-      --fs-700: 3rem;
-      --fs-600: 3rem;
-      --fs-500: 2rem;
-      --fs-300: 1.2rem;
-      /* Text Sizes */
-      --fs-400: 1.3rem;
-      --fs-300: 1.1rem;
-   }
-
-   h1 {
-      letter-spacing: 1px;
-   }
-}
-
-@media (max-width: 350px) {
-   /* Header Sizes */
-   html {
-      --fs-700: 2.5rem;
    }
 }

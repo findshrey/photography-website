@@ -260,6 +260,7 @@
 
 .about-text h2 {
    color: var(--c-mustard);
+   font-size: var(--fs-600);
    margin: 2rem 0 3rem 0;
 }
 
