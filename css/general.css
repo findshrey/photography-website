@@ -20,7 +20,6 @@ html {
    scroll-behavior: smooth;
 
    /* Font Family */
-   --ff-heading: "Josefin Sans", sans-serif;
    --ff-body: "Overpass", sans-serif;
 
    /* Font sizes */
@@ -78,20 +77,12 @@ h1,
 h2,
 h3,
 h4 {
-   font-family: var(--ff-heading);
    font-weight: 400;
 }
 
 /* ------------------------------ */
 /* UTILITY CLASSES */
 /* ------------------------------ */
-
-.text-xl {
-   font-size: var(--fs-600);
-}
-.text-l {
-   font-size: var(--fs-500);
-}
 
 .container {
    width: 90%;

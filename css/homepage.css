@@ -67,10 +67,9 @@
    padding: calc(10rem + 3vw) 2rem;
 }
 
-.introduction .text-xl {
+.introduction div {
    color: var(--c-mustard);
-   font-family: var(--ff-heading);
-   font-weight: 350;
+   font-size: var(--fs-600);
    margin: 4rem 0;
 }
 
@@ -142,6 +141,14 @@
    text-align: center;
    padding: 0.5rem;
 }
+.gallery6 .big-text {
+   font-size: var(--fs-600);
+}
+
+.gallery6 .med-text {
+   font-size: var(--fs-500);
+}
+
 .gallery6 a {
    margin-top: 1rem;
 }
