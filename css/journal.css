@@ -3,7 +3,7 @@
    padding: var(--padding-section);
 }
 
-.journal header {
+.journal .journal-header {
    text-align: center;
    text-transform: uppercase;
    letter-spacing: calc(0.1rem + 0.1vw);
@@ -14,7 +14,7 @@
    color: var(--c-mustard);
 }
 
-.journal header span {
+.journal-header p {
    font-size: var(--fs-300);
 }
 

@@ -14,7 +14,7 @@
    color: var(--c-mustard);
 }
 
-.client-reviews header span {
+.client-reviews header p {
    font-size: var(--fs-300);
 }
 
@@ -37,7 +37,7 @@
    margin-bottom: calc(2rem + 1.25vw);
 }
 
-.review p {
+.review blockquote {
    font-style: italic;
    line-height: 2;
 }
@@ -47,7 +47,7 @@
       grid-template-columns: 1fr;
    }
 
-   .review p {
+   .review blockquote {
       text-align: center;
    }
 }
