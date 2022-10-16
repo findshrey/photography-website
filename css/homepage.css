@@ -14,8 +14,7 @@
    z-index: 50;
 }
 
-.logo h1,
-.logo h4,
+.logo,
 .nav-link {
    color: var(--c-white);
 }

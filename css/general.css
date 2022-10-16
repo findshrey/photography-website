@@ -124,15 +124,13 @@ h4 {
    text-align: center;
    pointer-events: none;
    margin-bottom: 4rem;
-}
-
-.main-head .logo h1 {
    font-size: var(--fs-700);
    font-weight: 300;
    letter-spacing: calc(1px + 0.25vw);
 }
 
-.logo .small-text {
+.logo span {
+   display: block;
    font-size: var(--fs-400);
    font-weight: 350;
    letter-spacing: calc(1px + 0.1vw);
