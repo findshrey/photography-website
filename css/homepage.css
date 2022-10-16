@@ -217,25 +217,20 @@
    line-height: 1.7;
 }
 
-.featured-reviews .review-nav {
+.featured-reviews .nav-review {
    display: flex;
    align-items: center;
 }
 
-.review-nav button {
+.nav-review button {
    background: transparent;
    border: none;
-   cursor: pointer;
    font-size: calc(var(--fs-300) + 1rem);
 }
 
-.review-nav button:focus {
-   outline: none;
-}
-
-.review-nav p {
-   margin: 0 2rem;
+.nav-review p {
    font-size: calc(var(--fs-300) + 0.2rem);
+   margin: 0 2rem;
 }
 
 /* ABOUT */

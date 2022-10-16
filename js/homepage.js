@@ -53,20 +53,20 @@ setTimeout(slideShow, 1000)
 const reviews = document.querySelectorAll(".review")
 const prevBtn = document.getElementById("js-prev-review")
 const nextBtn = document.getElementById("js-next-review")
-const currentReview = document.getElementById("js-current-review")
+const reviewNumber = document.getElementById("js-review-number")
 
-let currentActiveReview = 1
+let currentReviewNum = 1
 
 nextBtn.addEventListener("click", () => {
    const active = document.querySelector(".active")
 
    if (active.nextElementSibling) {
-      // removes active class and adds left
+      // removes active class and adds 'left' class
       active.className = "review left"
       active.nextElementSibling.className = "review active"
 
-      currentActiveReview += 1
-      updateCurrentReviewText()
+      currentReviewNum += 1
+      updateReviewNum()
    }
 })
 
@@ -77,13 +77,13 @@ prevBtn.addEventListener("click", () => {
       active.classList.remove("active")
       active.previousElementSibling.className = "review active"
 
-      currentActiveReview -= 1
-      updateCurrentReviewText()
+      currentReviewNum -= 1
+      updateReviewNum()
    }
 })
 
-const updateCurrentReviewText = () => {
-   currentReview.innerText = `${currentActiveReview} of ${reviews.length}`
+const updateReviewNum = () => {
+   reviewNumber.innerText = `${currentReviewNum} of ${reviews.length}`
 }
 
-updateCurrentReviewText()
+updateReviewNum()
