@@ -12,8 +12,8 @@ const renderShowcaseImage = (doc) => {
    img.setAttribute("src", `${doc.data().sm}`)
    img.setAttribute(
       "srcset",
-      `${doc.data().sm} 800w, 
-      ${doc.data().md} 1500w, 
+      `${doc.data().sm} 800w,
+      ${doc.data().md} 1500w,
       ${doc.data().lg} 2200w`
    )
 
@@ -46,6 +46,7 @@ const slideShow = () => {
 
    setInterval(nextSlide, 5000)
 }
+
 setTimeout(slideShow, 1000)
 
 // REVIEW NAVIGATION

@@ -1,10 +1,4 @@
-/* NAVIGATION & SHOWCASE */
-.header-showcase {
-   min-height: 100vh;
-   position: relative;
-   overflow: hidden;
-}
-
+/* SITE NAVIGATION (MAIN HEADER) */
 .main-head {
    background: transparent;
    position: absolute;
@@ -27,6 +21,13 @@
    color: var(--c-white);
 }
 
+/* SHOWCASE (AUTO SLIDESHOW) */
+.showcase-wrapper {
+   min-height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
 /* Auto slideshow */
 .showcase .slide {
    position: absolute;
@@ -44,7 +45,7 @@
 }
 
 /* Overlay for showcase */
-.header-showcase::after {
+.showcase-wrapper::after {
    content: "";
    background: rgba(0, 0, 0, 0.2);
    position: absolute;
