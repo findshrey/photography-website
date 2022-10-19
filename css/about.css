@@ -1,10 +1,7 @@
 /* ABOUT LEAD */
 .about-lead {
-   padding: var(--padding-section);
-}
-
-.about-lead .container {
    display: flex;
+   padding: var(--padding-section);
 }
 
 .lead-img-wrapper {
@@ -61,19 +58,19 @@
    gap: calc(3rem + 1.5vw);
 }
 
-.achievements h3 {
+.achievements dt {
    font-size: var(--fs-500);
    margin-bottom: calc(2rem + 0.75vw);
 }
 
-.achievements p {
+.achievements dd {
    font-size: var(--fs-300);
    line-height: 1.8;
 }
 
 @media (max-width: 800px) {
    /* ABOUT LEAD */
-   .about-lead .container {
+   .about-lead {
       flex-direction: column;
    }
 

@@ -3,18 +3,18 @@
    padding: var(--padding-section);
 }
 
-.client-reviews header {
+.client-reviews-head {
    text-align: center;
    text-transform: uppercase;
    letter-spacing: calc(0.1rem + 0.1vw);
    margin-bottom: var(--page-head-margin);
 }
 
-.client-reviews h2 {
+.client-reviews-head h2 {
    color: var(--c-mustard);
 }
 
-.client-reviews header p {
+.client-reviews-head p {
    font-size: var(--fs-300);
 }
 
@@ -32,8 +32,8 @@
 
 .review h3 {
    font-size: var(--fs-500);
-   text-transform: uppercase;
    text-align: center;
+   text-transform: uppercase;
    margin-bottom: calc(2rem + 1.25vw);
 }
 
