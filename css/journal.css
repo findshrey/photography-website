@@ -10,7 +10,7 @@
    margin-bottom: var(--page-head-margin);
 }
 
-.journal h2 {
+.journal-header h2 {
    color: var(--c-mustard);
 }
 

@@ -3,7 +3,7 @@
    padding: var(--padding-section);
 }
 
-.journal-page .container {
+.journal-page.container {
    width: 60%;
 }
 
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 800px) {
-   .journal-page .container {
+   .journal-page.container {
       width: 90%;
    }
 }
