@@ -53,28 +53,26 @@
 
       <main>
          <!-- CONTACT LEAD -->
-         <section class="contact-lead section-fade-in">
-            <div class="container">
-               <header class="contact-lead-title">
-                  <h2>GET IN TOUCH</h2>
-                  <p>
-                     This is where the magic happens. It’s where you basically
-                     ask me out on a date as a third wheel, and we become real
-                     good friends.
-                  </p>
-               </header>
-               <figure class="lead-img-wrapper">
-                  <img
-                     src="https://res.cloudinary.com/dg4arvkpw/image/upload/v1602684840/emma-earl/contact/contact-lead_wumruz.jpg"
-                     srcset="
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/contact/contact-lead_wumruz.jpg   500w,
-                        https://res.cloudinary.com/dg4arvkpw/image/upload/w_1098/emma-earl/contact/contact-lead_wumruz.jpg 1098w
-                     "
-                     sizes="(max-width: 800px) 90vw, 50vw"
-                  />
-               </figure>
-            </div>
-         </section>
+         <div class="contact-lead container section-fade-in">
+            <header class="contact-lead-title">
+               <h2>GET IN TOUCH</h2>
+               <p>
+                  This is where the magic happens. It’s where you basically ask
+                  me out on a date as a third wheel, and we become real good
+                  friends.
+               </p>
+            </header>
+            <figure class="lead-img-wrapper">
+               <img
+                  src="https://res.cloudinary.com/dg4arvkpw/image/upload/v1602684840/emma-earl/contact/contact-lead_wumruz.jpg"
+                  srcset="
+                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_500/emma-earl/contact/contact-lead_wumruz.jpg   500w,
+                     https://res.cloudinary.com/dg4arvkpw/image/upload/w_1098/emma-earl/contact/contact-lead_wumruz.jpg 1098w
+                  "
+                  sizes="(max-width: 800px) 90vw, 50vw"
+               />
+            </figure>
+         </div>
 
          <!-- CONTACT -->
          <section class="contact section-fade-in">
@@ -85,7 +83,7 @@
                netlify-honeypot="bot-field"
                data-netlify="true"
             >
-               <div class="form-input">
+               <p class="form-input">
                   <input
                      type="text"
                      name="user-name"
@@ -97,8 +95,8 @@
                      name="partner-name"
                      placeholder="Your Partner's Name"
                   />
-               </div>
-               <div class="form-input">
+               </p>
+               <p class="form-input">
                   <input
                      type="email"
                      name="email"
@@ -111,8 +109,8 @@
                      placeholder="Phone*"
                      required
                   />
-               </div>
-               <div class="form-input">
+               </p>
+               <p class="form-input">
                   <input type="text" name="date" placeholder="Date*" required />
                   <input
                      type="text"
@@ -120,10 +118,10 @@
                      placeholder="Location*"
                      required
                   />
-               </div>
-               <div class="form-select">
+               </p>
+               <p class="form-select">
                   <label>
-                     <div>We want you for...</div>
+                     <span>We want you for...</span>
                      <select name="requirement">
                         <option hidden disabled selected value>
                            -- Select an option --
@@ -134,7 +132,7 @@
                      </select>
                   </label>
                   <label>
-                     <div>How did you hear about me ?</div>
+                     <span>How did you hear about me ?</span>
                      <select name="where-you-find-me">
                         <option hidden disabled selected value>
                            -- Select an option --
@@ -148,12 +146,12 @@
                         <option value="Other">Other</option>
                      </select>
                   </label>
-               </div>
-               <div class="form-radio">
-                  <div class="coverage-question">
+               </p>
+               <fieldset class="form-radio">
+                  <legend class="coverage-question">
                      Are you interested in wedding weekend coverage ?
-                  </div>
-                  <div class="coverage-options">
+                  </legend>
+                  <p class="coverage-options">
                      <label>
                         <input
                            type="radio"
@@ -178,28 +176,28 @@
                         />
                         <span>Nah we good!</span>
                      </label>
-                  </div>
-               </div>
-               <div class="form-textarea">
-                  <div>Tell me about you two! Give me details.</div>
+                  </p>
+               </fieldset>
+               <p class="form-textarea">
+                  <label>Tell me about you two! Give me details.</label>
                   <textarea
                      name="about-user"
                      rows="8"
                      placeholder="Hobbies? Favourive shows? Food? How you met?"
                   >
                   </textarea>
-               </div>
-               <div class="form-textarea">
-                  <div>Any questions for me ?</div>
+               </p>
+               <p class="form-textarea">
+                  <label>Any questions for me ?</label>
                   <textarea
                      name="user-questions"
                      rows="8"
                      placeholder="Fire away!"
                   ></textarea>
-               </div>
-               <div class="form-submit">
+               </p>
+               <p class="form-submit">
                   <button type="submit" class="btn">Submit</button>
-               </div>
+               </p>
             </form>
          </section>
       </main>
