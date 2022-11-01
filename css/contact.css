@@ -91,12 +91,9 @@ input[type="number"] {
    margin-bottom: 4.5rem;
 }
 
-.form-select span {
-   letter-spacing: 2px;
-}
-
 .form-select label {
    flex-basis: 45%;
+   letter-spacing: 2px;
 }
 
 .form-select select {
@@ -126,12 +123,9 @@ select:focus {
    margin-bottom: 1.5rem;
 }
 
-.coverage-options span {
-   letter-spacing: 1px;
-}
-
 .coverage-options label {
    cursor: pointer;
+   letter-spacing: 1px;
 }
 
 .coverage-options label:nth-child(2) {
