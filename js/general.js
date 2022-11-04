@@ -55,9 +55,10 @@ const renderFooterImage = (doc) => {
    img.setAttribute("src", `${doc.data().sm}`)
    img.setAttribute(
       "srcset",
-      `${doc.data().sm} 500w, 
+      `${doc.data().sm} 500w,
       ${doc.data().md} 1000w`
    )
+   img.setAttribute("loading", "lazy")
 
    footerImages.appendChild(img)
 }

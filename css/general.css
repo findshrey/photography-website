@@ -290,7 +290,7 @@ h4 {
 
    .nav-main.active ul {
       opacity: 1;
-      z-index: 95;
+      z-index: 90;
       pointer-events: auto;
    }
 
