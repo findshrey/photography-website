@@ -9,8 +9,8 @@ const renderJournalImage = (doc) => {
    img.setAttribute("src", `${doc.data().sm}`)
    img.setAttribute(
       "srcset",
-      `${doc.data().sm} 500w, 
-      ${doc.data().md} 1000w, 
+      `${doc.data().sm} 500w,
+      ${doc.data().md} 1000w,
       ${doc.data().lg} 1500w`
    )
    img.setAttribute("sizes", "(max-width: 800px) 90vw, 60vw")
