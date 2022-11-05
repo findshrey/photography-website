@@ -63,7 +63,7 @@ const renderFooterImage = (doc) => {
    footerImages.appendChild(img)
 }
 
-// Check if on Contact page
+// Run if NOT on Contact page
 if (!location.pathname.includes("contact")) {
    // Get collection data
    db.collection(`footer-instagram`)

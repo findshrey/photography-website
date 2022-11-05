@@ -14,6 +14,7 @@ const renderJournalImage = (doc) => {
       ${doc.data().lg} 1500w`
    )
    img.setAttribute("sizes", "(max-width: 800px) 90vw, 60vw")
+   img.setAttribute("loading", "lazy")
 
    journalPageImages.appendChild(img)
 }
