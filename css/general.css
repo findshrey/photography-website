@@ -48,7 +48,7 @@ html {
 }
 
 body {
-   background: var(--c-white);
+   background-color: var(--c-white);
    color: var(--c-black-matte);
    font-family: var(--ff-body);
    font-size: var(--fs-400);
@@ -97,7 +97,7 @@ h4 {
 }
 
 .btn {
-   background: transparent;
+   background-color: transparent;
    border: none;
    border-bottom: 1px solid var(--c-black-matte);
    color: var(--c-black-matte);
@@ -115,7 +115,7 @@ h4 {
 
 /* NAVIGATION */
 .main-head {
-   background: var(--c-white-ghost);
+   background-color: var(--c-white-ghost);
    text-transform: uppercase;
    padding: 4rem 0;
 }
@@ -156,7 +156,7 @@ h4 {
 
 /* FOOTER */
 .footer-upper {
-   background: var(--c-white-ghost);
+   background-color: var(--c-white-ghost);
    padding: var(--padding-section);
 }
 
@@ -164,27 +164,27 @@ h4 {
    display: flex;
 }
 
-.upper-left {
+.insta-images {
    flex: 1;
 }
 
-.upper-left .title {
+.insta-images figcaption {
    margin-bottom: 3rem;
 }
 
-.upper-left .img-wrapper {
+.insta-images .img-wrapper {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 0.5rem;
 }
 
-.upper-left img {
+.insta-images img {
    display: block;
    width: 100%;
    object-fit: cover;
 }
 
-.footer-upper .upper-right {
+.footer-upper .lets-connect {
    flex: 1;
    display: flex;
    flex-direction: column;
@@ -193,17 +193,17 @@ h4 {
    margin-left: 5rem;
 }
 
-.upper-right h2 {
+.lets-connect h2 {
    font-size: var(--fs-500);
 }
 
-.upper-right p {
+.lets-connect p {
    font-size: var(--fs-300);
    line-height: 1.8;
    margin: calc(1.8rem + 0.75vw) 0;
 }
 
-.upper-right a {
+.lets-connect a {
    font-size: var(--fs-300);
 }
 
@@ -211,7 +211,7 @@ h4 {
    padding: 5rem 0;
 }
 
-.footer-lower .container {
+.footer-lower.container {
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -230,7 +230,7 @@ h4 {
    margin-left: 0;
 }
 
-.copyright div {
+.copyright span {
    font-size: var(--fs-300);
 }
 
@@ -335,21 +335,21 @@ h4 {
       flex-direction: column;
    }
 
-   .upper-left {
+   .insta-images {
       text-align: center;
    }
 
-   .upper-left .img-wrapper {
+   .insta-images .img-wrapper {
       grid-template-columns: repeat(2, 1fr);
    }
 
-   .footer-upper .upper-right {
+   .footer-upper .lets-connect {
       align-items: center;
       text-align: center;
       margin: 5rem 0 0 0;
    }
 
-   .footer-lower .container {
+   .footer-lower.container {
       flex-direction: column-reverse;
       text-align: center;
    }

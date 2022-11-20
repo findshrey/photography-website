@@ -36,7 +36,7 @@
 
 /* ABOUT */
 .about {
-   background: var(--c-white-ghost);
+   background-color: var(--c-white-ghost);
    line-height: 2;
    padding: var(--padding-section);
 }

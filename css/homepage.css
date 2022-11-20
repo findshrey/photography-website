@@ -1,6 +1,6 @@
 /* SITE NAVIGATION (MAIN HEADER) */
 .main-head {
-   background: transparent;
+   background-color: transparent;
    position: absolute;
    top: 0;
    left: 0;
@@ -47,7 +47,7 @@
 /* Overlay for showcase */
 .showcase-wrapper::after {
    content: "";
-   background: rgba(0, 0, 0, 0.2);
+   background-color: rgba(0, 0, 0, 0.2);
    position: absolute;
    top: 0;
    left: 0;
@@ -57,7 +57,7 @@
 
 /* MOTTO */
 .motto {
-   background: var(--c-white-ghost);
+   background-color: var(--c-white-ghost);
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -158,7 +158,7 @@
 
 /* FEATURED REVIEWS */
 .featured-reviews {
-   background: var(--c-white-ghost);
+   background-color: var(--c-white-ghost);
    height: 50rem;
    padding: 5rem 0;
 }
@@ -223,7 +223,7 @@
 }
 
 .nav-review button {
-   background: transparent;
+   background-color: transparent;
    border: none;
    font-size: calc(var(--fs-300) + 1rem);
 }
@@ -295,7 +295,7 @@
    }
 
    .tile-6 {
-      background: var(--c-white-ghost);
+      background-color: var(--c-white-ghost);
    }
 
    /* FEATURED REVIEWS */

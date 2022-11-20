@@ -26,7 +26,7 @@
 }
 
 .reviews-wrapper .review {
-   background: var(--c-white-ghost);
+   background-color: var(--c-white-ghost);
    padding: 4rem calc(2rem + 1.5vw);
 }
 
