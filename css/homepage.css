@@ -10,15 +10,15 @@
 
 .logo,
 .nav-link {
-   color: var(--c-white);
+   color: var(--clr-white);
 }
 
 .nav-link:hover {
-   border-bottom: 1px solid var(--c-white);
+   border-bottom: 1px solid var(--clr-white);
 }
 
 .main-head .hamburger {
-   color: var(--c-white);
+   color: var(--clr-white);
 }
 
 /* SHOWCASE (AUTO SLIDESHOW) */
@@ -57,7 +57,7 @@
 
 /* MOTTO */
 .motto {
-   background-color: var(--c-white-ghost);
+   background-color: var(--clr-white-ghost);
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -75,7 +75,7 @@
 }
 
 .motto p:nth-of-type(2) {
-   color: var(--c-mustard);
+   color: var(--clr-mustard);
    font-size: var(--fs-600);
    margin: 4rem 0;
 }
@@ -158,7 +158,7 @@
 
 /* FEATURED REVIEWS */
 .featured-reviews {
-   background-color: var(--c-white-ghost);
+   background-color: var(--clr-white-ghost);
    height: 50rem;
    padding: 5rem 0;
 }
@@ -257,7 +257,7 @@
 }
 
 .intro-text h2 {
-   color: var(--c-mustard);
+   color: var(--clr-mustard);
    font-size: var(--fs-600);
    margin: 2rem 0 3rem 0;
 }
@@ -295,7 +295,7 @@
    }
 
    .tile-6 {
-      background-color: var(--c-white-ghost);
+      background-color: var(--clr-white-ghost);
    }
 
    /* FEATURED REVIEWS */

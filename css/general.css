@@ -14,11 +14,11 @@
    --fs-300: clamp(1.3rem, calc(0.8rem + 0.5vw), 1.9rem);
 
    /* Colors */
-   --c-black-dark: #0d0d0d;
-   --c-black-matte: #333;
-   --c-mustard: #ff971d;
-   --c-white: #fff;
-   --c-white-ghost: #f4f2f1;
+   --clr-black-dark: #0d0d0d;
+   --clr-black-matte: #333;
+   --clr-mustard: #ff971d;
+   --clr-white: #fff;
+   --clr-white-ghost: #f4f2f1;
 
    /* Paddings & Margins */
    --padding-section: calc(5rem + 3vw) 0;
@@ -48,8 +48,8 @@ html {
 }
 
 body {
-   background-color: var(--c-white);
-   color: var(--c-black-matte);
+   background-color: var(--clr-white);
+   color: var(--clr-black-matte);
    font-family: var(--ff-body);
    font-size: var(--fs-400);
    line-height: 1.5;
@@ -99,8 +99,8 @@ h4 {
 .btn {
    background-color: transparent;
    border: none;
-   border-bottom: 1px solid var(--c-black-matte);
-   color: var(--c-black-matte);
+   border-bottom: 1px solid var(--clr-black-matte);
+   color: var(--clr-black-matte);
    cursor: pointer;
    font-style: italic;
 }
@@ -115,7 +115,7 @@ h4 {
 
 /* NAVIGATION */
 .main-head {
-   background-color: var(--c-white-ghost);
+   background-color: var(--clr-white-ghost);
    text-transform: uppercase;
    padding: 4rem 0;
 }
@@ -147,7 +147,7 @@ h4 {
 }
 
 .nav-link:hover {
-   border-bottom: 1px solid var(--c-black-matte);
+   border-bottom: 1px solid var(--clr-black-matte);
 }
 
 .main-head .hamburger {
@@ -156,7 +156,7 @@ h4 {
 
 /* FOOTER */
 .footer-upper {
-   background-color: var(--c-white-ghost);
+   background-color: var(--clr-white-ghost);
    padding: var(--padding-section);
 }
 
@@ -266,7 +266,7 @@ h4 {
    }
 
    .nav-main ul {
-      background-color: var(--c-black-dark);
+      background-color: var(--clr-black-dark);
       position: fixed;
       top: 0;
       left: 0;
@@ -295,24 +295,24 @@ h4 {
    }
 
    .nav-main.active .nav-link {
-      color: var(--c-white);
+      color: var(--clr-white);
    }
 
    .nav-main.active .nav-link:hover {
-      border-bottom: 1px solid var(--c-white);
+      border-bottom: 1px solid var(--clr-white);
    }
 
    .main-head .hamburger {
       background-color: transparent;
       border: none;
-      color: var(--c-black-matte);
+      color: var(--clr-black-matte);
       display: flex;
       font-size: calc(2rem + 1vw);
       transition: transform 0.5s ease;
    }
 
    .hamburger.active {
-      color: var(--c-white);
+      color: var(--clr-white);
       position: fixed;
       top: 4rem;
       z-index: 100;

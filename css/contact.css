@@ -24,7 +24,7 @@
 }
 
 .contact-lead-title h2 {
-   color: var(--c-mustard);
+   color: var(--clr-mustard);
    font-size: var(--fs-600);
    letter-spacing: calc(1px + 0.1vw);
    margin-bottom: 1rem;
@@ -37,7 +37,7 @@
 
 /* CONTACT FORM */
 .contact {
-   background-color: var(--c-white-ghost);
+   background-color: var(--clr-white-ghost);
    display: flex;
    justify-content: center;
    padding: var(--padding-section);
@@ -57,14 +57,14 @@
 
 .form-input input {
    flex-basis: 45%;
-   background-color: var(--c-white-ghost);
+   background-color: var(--clr-white-ghost);
    border: none;
-   border-bottom: 1px solid var(--c-black-matte);
+   border-bottom: 1px solid var(--clr-black-matte);
    padding: 1rem 0;
 }
 
 input::placeholder {
-   color: var(--c-black-matte);
+   color: var(--clr-black-matte);
    letter-spacing: 2px;
 }
 
@@ -98,8 +98,8 @@ input[type="number"] {
 
 .form-select select {
    appearance: none;
-   background-color: var(--c-white-ghost);
-   color: var(--c-black-matte);
+   background-color: var(--clr-white-ghost);
+   color: var(--clr-black-matte);
    font-style: italic;
    letter-spacing: 2px;
    width: 100%;
@@ -134,8 +134,8 @@ select:focus {
 
 input[type="radio"]:checked {
    appearance: none;
-   background-color: var(--c-mustard);
-   border: 1px solid var(--c-mustard);
+   background-color: var(--clr-mustard);
+   border: 1px solid var(--clr-mustard);
    border-radius: 50%;
    box-shadow: 0px 0px 0px 2px white inset;
    display: inline-block;
@@ -154,7 +154,7 @@ input[type="radio"]:checked {
 }
 
 .form-textarea textarea {
-   background-color: var(--c-white-ghost);
+   background-color: var(--clr-white-ghost);
    font-family: inherit;
    resize: none;
    width: 100%;

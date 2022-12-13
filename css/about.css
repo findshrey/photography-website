@@ -22,7 +22,7 @@
 }
 
 .about-lead-title h2 {
-   color: var(--c-mustard);
+   color: var(--clr-mustard);
    font-size: var(--fs-600);
    letter-spacing: calc(2px + 0.3vw);
    margin-bottom: 1rem;
@@ -36,7 +36,7 @@
 
 /* ABOUT */
 .about {
-   background-color: var(--c-white-ghost);
+   background-color: var(--clr-white-ghost);
    line-height: 2;
    padding: var(--padding-section);
 }
